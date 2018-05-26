@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LBCoreApp.Application\LBCoreApp.Application.csproj" />
+    <ProjectReference Include="..\LBCoreApp.Data.EF\LBCoreApp.Data.EF.csproj" />
+    <ProjectReference Include="..\LBCoreApp.Data\LBCoreApp.Data.csproj" />
+    <ProjectReference Include="..\LBCoreApp.Infrastructure\LBCoreApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\LBCoreApp.Utilities\LBCoreApp.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
