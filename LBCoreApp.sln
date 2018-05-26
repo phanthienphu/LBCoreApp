@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp", "LBCoreApp\LBCoreApp.csproj", "{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8080FDA-0899-4C7E-8C4E-8EEE0F89734D}
+	EndGlobalSection
+EndGlobal
