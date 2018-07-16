@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using LBCoreApp.Infrastructure.SharedKernel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LBCoreApp.Data.Entities
 {
