@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp", "LBCoreApp\LBCoreApp.csproj", "{A8AE0E8B-35F5-49B7-807B-4F64E8F84D1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp.Infrastructure", "LBCoreApp.Infrastructure\LBCoreApp.Infrastructure.csproj", "{FF6E3982-A696-45F0-99FF-23ECE60D31A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp.Infrastructure", "LBCoreApp.Infrastructure\LBCoreApp.Infrastructure.csproj", "{FF6E3982-A696-45F0-99FF-23ECE60D31A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp.Utilities", "LBCoreApp.Utilities\LBCoreApp.Utilities.csproj", "{CB25EB8A-743B-4C52-8C77-B8A0B625F0F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp.Utilities", "LBCoreApp.Utilities\LBCoreApp.Utilities.csproj", "{CB25EB8A-743B-4C52-8C77-B8A0B625F0F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp.Data", "LBCoreApp.Data\LBCoreApp.Data.csproj", "{25752BE2-2C90-41EF-A5A1-89951802E04A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp.Data", "LBCoreApp.Data\LBCoreApp.Data.csproj", "{25752BE2-2C90-41EF-A5A1-89951802E04A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp.Data.EF", "LBCoreApp.Data.EF\LBCoreApp.Data.EF.csproj", "{59F46429-3018-401E-9902-18CC41190939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp.Data.EF", "LBCoreApp.Data.EF\LBCoreApp.Data.EF.csproj", "{59F46429-3018-401E-9902-18CC41190939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBCoreApp.Application", "LBCoreApp.Application\LBCoreApp.Application.csproj", "{3A47E2A8-7614-4312-84CD-5D86CF52649E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBCoreApp.Application", "LBCoreApp.Application\LBCoreApp.Application.csproj", "{3A47E2A8-7614-4312-84CD-5D86CF52649E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{E9C82A23-1D87-429E-A4F4-002A59981703}"
 EndProject
