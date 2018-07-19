@@ -4,6 +4,7 @@ namespace LBCoreApp.Data.EF.Extensions
 {
     public static class ModelBuilderExtensions
     {
+        //cấu hình khoá chính trong model
         public static void AddConfiguration<TEntity>(
           this ModelBuilder modelBuilder,
           DbEntityConfiguration<TEntity> entityConfiguration) where TEntity : class

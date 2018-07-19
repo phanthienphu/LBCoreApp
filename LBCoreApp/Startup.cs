@@ -13,6 +13,11 @@ using LBCoreApp.Models;
 using LBCoreApp.Services;
 using LBCoreApp.Data.EF;
 using LBCoreApp.Data.Entities;
+using AutoMapper;
+using LBCoreApp.Application.Interfaces;
+using LBCoreApp.Data.IRepositories;
+using LBCoreApp.Data.EF.Repositories;
+using LBCoreApp.Application.Implementation;
 
 namespace LBCoreApp
 {
@@ -39,8 +44,16 @@ namespace LBCoreApp
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>(); //AddScoped giới hạn 1 request
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>(); //AddScoped giới hạn 1 request
+
+            services.AddSingleton(Mapper.Configuration); //chỉ chèn một automapper cho ứng dụng (dùng AddSingleton)
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));//cấu hình imapper cho .net core
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService,ProductCategoryService>();
+
             services.AddMvc();
         }
 
