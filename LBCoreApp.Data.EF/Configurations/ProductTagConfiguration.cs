@@ -13,7 +13,7 @@ namespace LBCoreApp.Data.EF.Configurations
         public override void Configure(EntityTypeBuilder<ProductTag> entity)
         {
             entity.Property(c => c.TagId).HasMaxLength(255).IsRequired()
-            .HasColumnType("varchar(255)");
+            .HasColumnType("varchar(50)");
             // etc.
         }
     }

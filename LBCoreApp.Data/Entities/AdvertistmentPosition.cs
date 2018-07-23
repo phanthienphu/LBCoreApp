@@ -10,7 +10,7 @@ namespace LBCoreApp.Data.Entities
     [Table("AdvertistmentPositions")]
     public class AdvertistmentPosition : DomainEntity<string>
     {
-        [StringLength(20)]
+        [StringLength(50)]
         public string PageId { get; set; }
 
         [StringLength(250)]

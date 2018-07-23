@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace LBCoreApp.Data.EF.Configurations
 {
-    public class TagConfiguration : DbEntityConfiguration<Tag>
+    public class AdvertistmentPageConfiguration : DbEntityConfiguration<AdvertistmentPage>
     {
-        public override void Configure(EntityTypeBuilder<Tag> entity)
+        public override void Configure(EntityTypeBuilder<AdvertistmentPage> entity)
         {
             entity.Property(c => c.Id).HasMaxLength(50)
                 .IsRequired().HasColumnType("varchar(50)");
