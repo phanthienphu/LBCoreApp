@@ -63,7 +63,7 @@ namespace LBCoreApp
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>(); //AddScoped giới hạn 1 request
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>(); //AddScoped giới hạn 1 request
-
+            
             services.AddSingleton(Mapper.Configuration); //chỉ chèn một automapper cho ứng dụng (dùng AddSingleton)
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));//cấu hình imapper cho .net core
 
@@ -100,6 +100,10 @@ namespace LBCoreApp
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
             //dbInitializer.Seed().Wait();
         }
