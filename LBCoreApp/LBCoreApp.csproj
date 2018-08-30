@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\lib\bower_components\bootbox.js\.bower.json" />
+    <Content Include="wwwroot\lib\bower_components\bootbox.js\bower.json" />
+    <Content Include="wwwroot\lib\bower_components\bootbox.js\package.json" />
     <Content Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\.bower.json" />
     <Content Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\bower.json" />
     <Content Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.css" />
@@ -1197,6 +1200,17 @@
     <Content Include="wwwroot\lib\bower_components\moment\.bower.json" />
     <Content Include="wwwroot\lib\bower_components\moment\bower.json" />
     <Content Include="wwwroot\lib\bower_components\moment\package-lock.json" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\.bower.json" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\bower.json" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\classes.html" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\images\Mail.png" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\inlines.html" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\metro.html" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\multi-text.html" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\examples\position.html" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\notify.jquery.json" />
+    <Content Include="wwwroot\lib\bower_components\notifyjs\package.json" />
     <Content Include="wwwroot\lib\bower_components\nprogress\.bower.json" />
     <Content Include="wwwroot\lib\bower_components\nprogress\bower.json" />
     <Content Include="wwwroot\lib\bower_components\nprogress\component.json" />
@@ -1225,6 +1239,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\bower_components\bootbox.js\.gitignore" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\.jshintrc" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\.npmignore" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\.travis.yml" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\bootbox.js" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\CONTRIBUTING.md" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\LICENSE.md" />
+    <None Include="wwwroot\lib\bower_components\bootbox.js\README.md" />
     <None Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.js" />
     <None Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.scss" />
     <None Include="wwwroot\lib\bower_components\bootstrap-daterangepicker\example\amd\main.js" />
@@ -5909,6 +5931,11 @@
     <None Include="wwwroot\lib\bower_components\moment\templates\default.js" />
     <None Include="wwwroot\lib\bower_components\moment\templates\locale-header.js" />
     <None Include="wwwroot\lib\bower_components\moment\templates\test-header.js" />
+    <None Include="wwwroot\lib\bower_components\notifyjs\.gitignore" />
+    <None Include="wwwroot\lib\bower_components\notifyjs\CHANGES.md" />
+    <None Include="wwwroot\lib\bower_components\notifyjs\dist\notify.js" />
+    <None Include="wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js" />
+    <None Include="wwwroot\lib\bower_components\notifyjs\README.md" />
     <None Include="wwwroot\lib\bower_components\nprogress\History.md" />
     <None Include="wwwroot\lib\bower_components\nprogress\License.md" />
     <None Include="wwwroot\lib\bower_components\nprogress\Notes.md" />
