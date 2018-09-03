@@ -57,7 +57,7 @@
         });
     },
     dateFormatJson: function (datetime) {
-        if (datetime == null || datetime == '')
+        if (datetime === null || datetime === '')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
@@ -76,7 +76,7 @@
         return day + "/" + month + "/" + year;
     },
     dateTimeFormatJson: function (datetime) {
-        if (datetime == null || datetime == '')
+        if (datetime === null || datetime === '')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
@@ -107,7 +107,7 @@
                 .addClass('hide');
     },
     getStatus: function (status) {
-        if (status == 1)
+        if (status === 1)
             return '<span class="badge bg-green">Kích hoạt</span>';
         else
             return '<span class="badge bg-red">Khoá</span>';
@@ -137,3 +137,10 @@
         return roots;
     }
 }
+
+$(document).ajaxSend(function (e, xhr, options) {
+    if (options.type.toUpperCase() === "POST" || options.type.toUpperCase() === "PUT") {
+        var token = $('form').find("input[name='__RequestVerificationToken']").val();
+        xhr.setRequestHeader("RequestVerificationToken", token);
+    }
+});

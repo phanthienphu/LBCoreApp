@@ -1,0 +1,343 @@
+2018-09-04T00:03:25.0379286+07:00 0HLGHNNLIT9PQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/index.html   (ca22a1cb)
+2018-09-04T00:03:25.1926287+07:00 0HLGHNNLIT9PQ:00000001 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:03:26.2315388+07:00 0HLGHNNLIT9PQ:00000001 [INF] Executed DbCommand ("471"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-09-04T00:03:27.0148987+07:00 0HLGHNNLIT9PQ:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-04T00:03:27.2895585+07:00 0HLGHNNLIT9PQ:00000001 [INF] Executed DbCommand ("21"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-04T00:03:27.3462461+07:00 0HLGHNNLIT9PQ:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-04T00:03:27.4453894+07:00 0HLGHNNLIT9PQ:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-04T00:03:27.5817483+07:00 0HLGHNNLIT9PQ:00000001 [INF] Request finished in 2530.9243ms 404  (791a596a)
+2018-09-04T00:03:31.0634228+07:00 0HLGHNNLIT9PQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:03:31.0914127+07:00 0HLGHNNLIT9PQ:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:03:31.1046357+07:00 0HLGHNNLIT9PQ:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:03:31.4376355+07:00 0HLGHNNLIT9PQ:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 40.5973ms (afa2e885)
+2018-09-04T00:03:31.6932248+07:00 0HLGHNNLIT9PQ:00000002 [INF] Request finished in 405.528ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:03:44.8476287+07:00 0HLGHNNLIT9PQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:03:44.8769890+07:00 0HLGHNNLIT9PQ:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:03:44.9357417+07:00 0HLGHNNLIT9PQ:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:03:45.0733008+07:00 0HLGHNNLIT9PQ:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 88.5109ms (afa2e885)
+2018-09-04T00:03:45.1333814+07:00 0HLGHNNLIT9PR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-04T00:03:45.1398733+07:00 0HLGHNNLIT9PT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-09-04T00:03:45.1444855+07:00 0HLGHNNLIT9PQ:00000003 [INF] Request finished in 260.2336ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:03:45.2112536+07:00 0HLGHNNLIT9PS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-04T00:03:45.2114965+07:00 0HLGHNNLIT9PR:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-04T00:03:45.2288188+07:00 0HLGHNNLIT9PQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-04T00:03:45.2436493+07:00 0HLGHNNLIT9PT:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-09-04T00:03:45.2760176+07:00 0HLGHNNLIT9PS:00000001 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-04T00:03:45.2993200+07:00 0HLGHNNLIT9PQ:00000004 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-09-04T00:03:45.3122336+07:00 0HLGHNNLIT9PU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-04T00:03:45.3295065+07:00 0HLGHNNLIT9PV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-04T00:03:45.3293857+07:00 0HLGHNNLIT9Q0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-09-04T00:03:45.3529155+07:00 0HLGHNNLIT9PU:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-09-04T00:03:45.3738199+07:00 0HLGHNNLIT9Q1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-09-04T00:03:45.3932160+07:00 0HLGHNNLIT9PV:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-04T00:03:45.4210989+07:00 0HLGHNNLIT9Q0:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-09-04T00:03:45.4276534+07:00 0HLGHNNLIT9Q1:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-09-04T00:03:45.4378907+07:00 0HLGHNNLIT9Q2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-04T00:03:45.4512017+07:00 0HLGHNNLIT9Q2:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-09-04T00:03:45.4571310+07:00 0HLGHNNLIT9PV:00000001 [INF] Request finished in 114.8512ms 200 application/javascript (791a596a)
+2018-09-04T00:03:45.4917018+07:00 0HLGHNNLIT9Q4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-04T00:03:45.5598876+07:00 0HLGHNNLIT9Q4:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-09-04T00:03:45.5630624+07:00 0HLGHNNLIT9PU:00000001 [INF] Request finished in 265.473ms 200 application/javascript (791a596a)
+2018-09-04T00:03:45.5844562+07:00 0HLGHNNLIT9Q1:00000001 [INF] Request finished in 216.8745ms 200 text/css (791a596a)
+2018-09-04T00:03:45.6111701+07:00 0HLGHNNLIT9PS:00000001 [INF] Request finished in 514.5086ms 200 text/css (791a596a)
+2018-09-04T00:03:45.6249793+07:00 0HLGHNNLIT9Q2:00000001 [INF] Request finished in 197.4783ms 200 text/css (791a596a)
+2018-09-04T00:03:45.6867777+07:00 0HLGHNNLIT9PQ:00000004 [INF] Request finished in 484.7148ms 200 application/javascript (791a596a)
+2018-09-04T00:03:45.7189402+07:00 0HLGHNNLIT9Q3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-04T00:03:45.7214136+07:00 0HLGHNNLIT9Q4:00000001 [INF] Request finished in 245.6446ms 200 application/javascript (791a596a)
+2018-09-04T00:03:45.7354701+07:00 0HLGHNNLIT9Q3:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery\dist\jquery.js"' (27b0a520)
+2018-09-04T00:03:45.8299880+07:00 0HLGHNNLIT9PR:00000001 [INF] Request finished in 691.9113ms 200 text/css (791a596a)
+2018-09-04T00:03:45.9170024+07:00 0HLGHNNLIT9PT:00000001 [INF] Request finished in 731.8926ms 200 text/css (791a596a)
+2018-09-04T00:03:45.9298489+07:00 0HLGHNNLIT9Q0:00000001 [INF] Request finished in 548.5158ms 200 text/css (791a596a)
+2018-09-04T00:03:45.9616208+07:00 0HLGHNNLIT9PV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-04T00:03:45.9813294+07:00 0HLGHNNLIT9PV:00000002 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-04T00:03:46.3555280+07:00 0HLGHNNLIT9PV:00000002 [INF] Request finished in 352.4806ms 200 font/woff2 (791a596a)
+2018-09-04T00:03:46.4829925+07:00 0HLGHNNLIT9Q3:00000001 [INF] Request finished in 864.3307ms 200 application/javascript (791a596a)
+2018-09-04T00:03:46.4977238+07:00 0HLGHNNLIT9PU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-09-04T00:03:46.5118869+07:00 0HLGHNNLIT9PU:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-04T00:03:46.5577755+07:00 0HLGHNNLIT9PU:00000002 [INF] Request finished in 52.9774ms 200 image/x-icon (791a596a)
+2018-09-04T00:03:52.9481915+07:00 0HLGHNNLIT9Q1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/index.html   (ca22a1cb)
+2018-09-04T00:03:53.0366766+07:00 0HLGHNNLIT9Q1:00000002 [INF] Request finished in 28.0162ms 404  (791a596a)
+2018-09-04T00:04:02.3292905+07:00 0HLGHNNLIT9Q2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/home/index.html   (ca22a1cb)
+2018-09-04T00:04:02.3536938+07:00 0HLGHNNLIT9Q2:00000002 [INF] Request finished in 14.8773ms 404  (791a596a)
+2018-09-04T00:04:15.1612604+07:00 0HLGHNNLIT9PS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/home/index.html   (ca22a1cb)
+2018-09-04T00:04:15.1931620+07:00 0HLGHNNLIT9PS:00000002 [INF] Request finished in 15.9553ms 404  (791a596a)
+2018-09-04T00:04:26.6428688+07:00 0HLGHNNLIT9PQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/home/index.html   (ca22a1cb)
+2018-09-04T00:04:26.6906538+07:00 0HLGHNNLIT9PQ:00000005 [INF] Request finished in 10.3326ms 404  (791a596a)
+2018-09-04T00:04:33.0665362+07:00 0HLGHNNLIT9Q4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin   (ca22a1cb)
+2018-09-04T00:04:33.0856684+07:00 0HLGHNNLIT9Q4:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:04:33.9189996+07:00 0HLGHNNLIT9Q4:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-04T00:04:34.7205228+07:00 0HLGHNNLIT9Q4:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 1635.6337ms (afa2e885)
+2018-09-04T00:04:34.7458189+07:00 0HLGHNNLIT9Q4:00000002 [INF] Request finished in 1665.8147ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:05:08.9240773+07:00 0HLGHNNLIT9PS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-04T00:05:08.9359499+07:00 0HLGHNNLIT9PS:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:05:08.9453204+07:00 0HLGHNNLIT9PS:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-04T00:05:08.9635384+07:00 0HLGHNNLIT9PS:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 21.12ms (afa2e885)
+2018-09-04T00:05:09.0453016+07:00 0HLGHNNLIT9PS:00000003 [INF] Request finished in 59.7994ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:05:17.2803520+07:00 0HLGHNNLIT9PQ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:05:17.3003784+07:00 0HLGHNNLIT9PQ:00000006 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:05:17.3199457+07:00 0HLGHNNLIT9PQ:00000006 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:05:17.3518662+07:00 0HLGHNNLIT9PQ:00000006 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 35.3598ms (afa2e885)
+2018-09-04T00:05:17.3752463+07:00 0HLGHNNLIT9PQ:00000006 [INF] Request finished in 107.5413ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:05:17.5668785+07:00 0HLGHNNLIT9Q4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-04T00:05:17.5808750+07:00 0HLGHNNLIT9Q4:00000003 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-04T00:05:17.6070883+07:00 0HLGHNNLIT9Q4:00000003 [INF] Request finished in 26.8888ms 200 application/javascript (791a596a)
+2018-09-04T00:05:40.3329826+07:00 0HLGHNNLIT9PS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/index.html   (ca22a1cb)
+2018-09-04T00:05:40.4014290+07:00 0HLGHNNLIT9PS:00000004 [INF] Request finished in 54.3639ms 404  (791a596a)
+2018-09-04T00:06:09.7684984+07:00 0HLGHNNLIT9PQ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:06:09.7802351+07:00 0HLGHNNLIT9PQ:00000007 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:06:09.7914659+07:00 0HLGHNNLIT9PQ:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:06:09.9078816+07:00 0HLGHNNLIT9PQ:00000007 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 22.6512ms (afa2e885)
+2018-09-04T00:06:09.9610605+07:00 0HLGHNNLIT9PQ:00000007 [INF] Request finished in 156.3486ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:07:02.9931912+07:00 0HLGHNNLIT9PQ:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:07:03.0055318+07:00 0HLGHNNLIT9PQ:00000008 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:07:03.4467393+07:00 0HLGHNNLIT9PQ:00000008 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:07:03.5258812+07:00 0HLGHNNLIT9PQ:00000008 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 515.8844ms (afa2e885)
+2018-09-04T00:07:03.6568345+07:00 0HLGHNNLIT9PQ:00000008 [INF] Request finished in 556.9061ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:07:03.7733128+07:00 0HLGHNNLIT9Q9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-04T00:07:03.7796957+07:00 0HLGHNNLIT9Q5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-04T00:07:03.7861916+07:00 0HLGHNNLIT9Q7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-04T00:07:03.7942177+07:00 0HLGHNNLIT9Q8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-04T00:07:03.8170982+07:00 0HLGHNNLIT9Q6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-09-04T00:07:03.8839669+07:00 0HLGHNNLIT9Q7:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery\dist\jquery.js"' (27b0a520)
+2018-09-04T00:07:03.8942424+07:00 0HLGHNNLIT9Q8:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-09-04T00:07:03.9313941+07:00 0HLGHNNLIT9PQ:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-04T00:07:03.9548475+07:00 0HLGHNNLIT9Q9:00000001 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-09-04T00:07:03.9892267+07:00 0HLGHNNLIT9QA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-09-04T00:07:04.0268404+07:00 0HLGHNNLIT9Q5:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-04T00:07:04.0398824+07:00 0HLGHNNLIT9Q6:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-09-04T00:07:04.0503348+07:00 0HLGHNNLIT9QC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-09-04T00:07:04.1141803+07:00 0HLGHNNLIT9QB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-04T00:07:04.1278354+07:00 0HLGHNNLIT9PQ:00000009 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-04T00:07:04.4440855+07:00 0HLGHNNLIT9QC:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-09-04T00:07:04.5433407+07:00 0HLGHNNLIT9QB:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-09-04T00:07:04.6011411+07:00 0HLGHNNLIT9QA:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-09-04T00:07:04.6327634+07:00 0HLGHNNLIT9Q6:00000001 [INF] Request finished in 573.0194ms 200 text/css (791a596a)
+2018-09-04T00:07:04.6413747+07:00 0HLGHNNLIT9PQ:00000009 [INF] Request finished in 482.8653ms 200 text/css (791a596a)
+2018-09-04T00:07:04.6700603+07:00 0HLGHNNLIT9Q7:00000001 [INF] Request finished in 757.3012ms 200 application/javascript (791a596a)
+2018-09-04T00:07:04.6853287+07:00 0HLGHNNLIT9Q5:00000001 [INF] Request finished in 853.7208ms 200 text/css (791a596a)
+2018-09-04T00:07:04.7062229+07:00 0HLGHNNLIT9QB:00000001 [INF] Request finished in 802.4119ms 200 text/css (791a596a)
+2018-09-04T00:07:04.7711977+07:00 0HLGHNNLIT9QC:00000001 [INF] Request finished in 750.1096ms 200 text/css (791a596a)
+2018-09-04T00:07:04.7824920+07:00 0HLGHNNLIT9QD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-04T00:07:04.8108833+07:00 0HLGHNNLIT9QA:00000001 [INF] Request finished in 929.2527ms 200 text/css (791a596a)
+2018-09-04T00:07:04.8248029+07:00 0HLGHNNLIT9QE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-04T00:07:04.8321348+07:00 0HLGHNNLIT9Q8:00000001 [INF] Request finished in 206.5854ms 200 application/javascript (791a596a)
+2018-09-04T00:07:04.8504109+07:00 0HLGHNNLIT9QD:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-04T00:07:04.8728274+07:00 0HLGHNNLIT9Q9:00000001 [INF] Request finished in 276.4544ms 200 application/javascript (791a596a)
+2018-09-04T00:07:04.9017741+07:00 0HLGHNNLIT9QE:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-09-04T00:07:04.9311113+07:00 0HLGHNNLIT9Q8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-04T00:07:04.9720719+07:00 0HLGHNNLIT9QE:00000001 [INF] Request finished in 1071.7052ms 200 application/javascript (791a596a)
+2018-09-04T00:07:04.9763208+07:00 0HLGHNNLIT9QD:00000001 [INF] Request finished in 1091.9965ms 200 application/javascript (791a596a)
+2018-09-04T00:07:04.9988894+07:00 0HLGHNNLIT9Q8:00000002 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-04T00:07:05.0945269+07:00 0HLGHNNLIT9Q8:00000002 [INF] Request finished in 161.4599ms 200 font/woff2 (791a596a)
+2018-09-04T00:07:05.1534962+07:00 0HLGHNNLIT9Q9:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-09-04T00:07:05.2108629+07:00 0HLGHNNLIT9Q9:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-04T00:07:05.2515610+07:00 0HLGHNNLIT9Q9:00000002 [INF] Request finished in 81.1267ms 200 image/x-icon (791a596a)
+2018-09-04T00:08:30.5897844+07:00 0HLGHNNLIT9QF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:08:30.6015319+07:00 0HLGHNNLIT9QF:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:30.6132550+07:00 0HLGHNNLIT9QF:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:08:30.6321085+07:00 0HLGHNNLIT9QF:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 21.714ms (afa2e885)
+2018-09-04T00:08:30.7883056+07:00 0HLGHNNLIT9QF:00000001 [INF] Request finished in 56.8572ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:08:30.9281992+07:00 0HLGHNNLIT9QK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-04T00:08:30.9576357+07:00 0HLGHNNLIT9QH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-04T00:08:30.9713026+07:00 0HLGHNNLIT9QG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-09-04T00:08:30.9883849+07:00 0HLGHNNLIT9QI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-09-04T00:08:31.0017868+07:00 0HLGHNNLIT9QJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-04T00:08:31.0138193+07:00 0HLGHNNLIT9QK:00000001 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-09-04T00:08:31.0220356+07:00 0HLGHNNLIT9QF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-04T00:08:31.0375211+07:00 0HLGHNNLIT9QH:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-09-04T00:08:31.0834625+07:00 0HLGHNNLIT9QG:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-09-04T00:08:31.1077012+07:00 0HLGHNNLIT9QI:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-09-04T00:08:31.1405814+07:00 0HLGHNNLIT9QO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-04T00:08:31.1503513+07:00 0HLGHNNLIT9QM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-09-04T00:08:31.2083902+07:00 0HLGHNNLIT9QK:00000001 [INF] Request finished in 201.2741ms 200 application/javascript (791a596a)
+2018-09-04T00:08:31.2673273+07:00 0HLGHNNLIT9QJ:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-09-04T00:08:31.2864038+07:00 0HLGHNNLIT9QF:00000002 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-04T00:08:31.3576818+07:00 0HLGHNNLIT9QH:00000001 [INF] Request finished in 360.8215ms 200 text/css (791a596a)
+2018-09-04T00:08:31.3715086+07:00 0HLGHNNLIT9QO:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-09-04T00:08:31.4301361+07:00 0HLGHNNLIT9QM:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-09-04T00:08:31.5154311+07:00 0HLGHNNLIT9QN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-04T00:08:31.5444437+07:00 0HLGHNNLIT9QL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-04T00:08:31.5717550+07:00 0HLGHNNLIT9QJ:00000001 [INF] Request finished in 499.554ms 200 application/javascript (791a596a)
+2018-09-04T00:08:31.6184899+07:00 0HLGHNNLIT9QF:00000002 [INF] Request finished in 594.9382ms 200 text/css (791a596a)
+2018-09-04T00:08:31.6322942+07:00 0HLGHNNLIT9QO:00000001 [INF] Request finished in 605.3124ms 200 application/javascript (791a596a)
+2018-09-04T00:08:31.6356548+07:00 0HLGHNNLIT9QN:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery\dist\jquery.js"' (27b0a520)
+2018-09-04T00:08:31.6562639+07:00 0HLGHNNLIT9QL:00000001 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-04T00:08:31.7060098+07:00 0HLGHNNLIT9QP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-04T00:08:31.8412663+07:00 0HLGHNNLIT9QL:00000001 [INF] Request finished in 798.536ms 200 text/css (791a596a)
+2018-09-04T00:08:31.8462207+07:00 0HLGHNNLIT9QP:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-04T00:08:31.8572818+07:00 0HLGHNNLIT9QM:00000001 [INF] Request finished in 679.3947ms 200 text/css (791a596a)
+2018-09-04T00:08:31.8803305+07:00 0HLGHNNLIT9QK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-04T00:08:31.9780301+07:00 0HLGHNNLIT9QG:00000001 [INF] Request finished in 407.0787ms 200 text/css (791a596a)
+2018-09-04T00:08:32.0411642+07:00 0HLGHNNLIT9QN:00000001 [INF] Request finished in 937.5486ms 200 application/javascript (791a596a)
+2018-09-04T00:08:32.0435950+07:00 0HLGHNNLIT9QK:00000002 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-04T00:08:32.0553962+07:00 0HLGHNNLIT9QP:00000001 [INF] Request finished in 887.0479ms 200 application/javascript (791a596a)
+2018-09-04T00:08:32.2588743+07:00 0HLGHNNLIT9QI:00000001 [INF] Request finished in 514.2158ms 200 text/css (791a596a)
+2018-09-04T00:08:32.3185408+07:00 0HLGHNNLIT9QK:00000002 [INF] Request finished in 305.2172ms 200 font/woff2 (791a596a)
+2018-09-04T00:08:32.3247354+07:00 0HLGHNNLIT9QH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-09-04T00:08:32.3453841+07:00 0HLGHNNLIT9QH:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-04T00:08:32.4884668+07:00 0HLGHNNLIT9QH:00000002 [INF] Request finished in 117.697ms 200 image/x-icon (791a596a)
+2018-09-04T00:08:38.7323023+07:00 0HLGHNNLIT9QI:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-04T00:08:39.1519811+07:00 0HLGHNNLIT9QI:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:39.2399640+07:00 0HLGHNNLIT9QI:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:08:39.3550920+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:08:39.7019787+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-04T00:08:39.7438271+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-04T00:08:39.7736054+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-04T00:08:39.7906838+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-04T00:08:39.8395888+07:00 0HLGHNNLIT9QI:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-04T00:08:39.8548846+07:00 0HLGHNNLIT9QI:00000002 [INF] User logged in. (fdce0db4)
+2018-09-04T00:08:39.8771999+07:00 0HLGHNNLIT9QI:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:08:40.4339135+07:00 0HLGHNNLIT9QG:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-04T00:08:40.4623976+07:00 0HLGHNNLIT9QG:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:40.5155443+07:00 0HLGHNNLIT9QG:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:08:40.5449529+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:08:40.6131725+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed DbCommand ("16"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-04T00:08:40.6344904+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-04T00:08:40.6534672+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-04T00:08:40.7029265+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-04T00:08:40.7705238+07:00 0HLGHNNLIT9QG:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-04T00:08:40.8432363+07:00 0HLGHNNLIT9QG:00000002 [INF] User logged in. (fdce0db4)
+2018-09-04T00:08:40.8850593+07:00 0HLGHNNLIT9QG:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:08:40.9252528+07:00 0HLGHNNLIT9QG:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 452.8197ms (afa2e885)
+2018-09-04T00:08:40.9834877+07:00 0HLGHNNLIT9QI:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 1987.4919ms (afa2e885)
+2018-09-04T00:08:41.0506752+07:00 0HLGHNNLIT9QJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-04T00:08:41.0721580+07:00 0HLGHNNLIT9QG:00000002 [INF] Request finished in 546.2566ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:08:41.0983091+07:00 0HLGHNNLIT9QI:00000002 [INF] Request finished in 2304.3135ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:08:41.1031320+07:00 0HLGHNNLIT9QO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-04T00:08:41.1272544+07:00 0HLGHNNLIT9QJ:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:41.1645013+07:00 0HLGHNNLIT9QO:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:41.1737569+07:00 0HLGHNNLIT9QJ:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-04T00:08:41.2301493+07:00 0HLGHNNLIT9QO:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-04T00:08:41.2525395+07:00 0HLGHNNLIT9QJ:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 123.2821ms (afa2e885)
+2018-09-04T00:08:41.3725280+07:00 0HLGHNNLIT9QJ:00000002 [INF] Request finished in 282.3734ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:08:41.4066187+07:00 0HLGHNNLIT9QO:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 143.4224ms (afa2e885)
+2018-09-04T00:08:41.4392026+07:00 0HLGHNNLIT9QO:00000002 [INF] Request finished in 378.2269ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:08:56.4598732+07:00 0HLGHNNLIT9QF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-04T00:08:56.5268794+07:00 0HLGHNNLIT9QF:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:08:56.5367789+07:00 0HLGHNNLIT9QF:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-04T00:08:56.6468282+07:00 0HLGHNNLIT9QF:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 21.1894ms (afa2e885)
+2018-09-04T00:08:56.6900069+07:00 0HLGHNNLIT9QF:00000003 [INF] Request finished in 204.3008ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-04T00:08:56.7069596+07:00 0HLGHNNLIT9QM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-04T00:08:56.7232157+07:00 0HLGHNNLIT9QL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-04T00:08:56.7388836+07:00 0HLGHNNLIT9QL:00000002 [INF] The file "/app/Controllers/Login/Index.js" was not modified (f1f8d725)
+2018-09-04T00:08:56.7437641+07:00 0HLGHNNLIT9QM:00000002 [INF] The file "/app/Shared/Common.js" was not modified (f1f8d725)
+2018-09-04T00:08:56.7674933+07:00 0HLGHNNLIT9QL:00000002 [INF] Request finished in 73.5528ms 304 application/javascript (791a596a)
+2018-09-04T00:08:56.7846367+07:00 0HLGHNNLIT9QM:00000002 [INF] Request finished in 76.6973ms 304 application/javascript (791a596a)
+2018-09-04T00:09:02.9624825+07:00 0HLGHNNLIT9QN:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-09-04T00:09:02.9754571+07:00 0HLGHNNLIT9QN:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:09:02.9853258+07:00 0HLGHNNLIT9QN:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:09:03.0024277+07:00 0HLGHNNLIT9QN:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:09:03.0312369+07:00 0HLGHNNLIT9QN:00000002 [WRN] Invalid password for user "e891f4ff-3ea6-4505-6244-08d5f0a862c7". (c2dce6c7)
+2018-09-04T00:09:03.0402691+07:00 0HLGHNNLIT9QN:00000002 [WRN] User "e891f4ff-3ea6-4505-6244-08d5f0a862c7" failed to provide the correct password. (ec8d2479)
+2018-09-04T00:09:03.0509381+07:00 0HLGHNNLIT9QN:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:09:03.0710114+07:00 0HLGHNNLIT9QN:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 96.6533ms (afa2e885)
+2018-09-04T00:09:03.0858771+07:00 0HLGHNNLIT9QN:00000002 [INF] Request finished in 119.9973ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:09:06.3580578+07:00 0HLGHNNLIT9QP:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-09-04T00:09:06.3708187+07:00 0HLGHNNLIT9QP:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:09:06.3832125+07:00 0HLGHNNLIT9QP:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:09:06.4004826+07:00 0HLGHNNLIT9QP:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:09:06.4261179+07:00 0HLGHNNLIT9QP:00000002 [WRN] Invalid password for user "e891f4ff-3ea6-4505-6244-08d5f0a862c7". (c2dce6c7)
+2018-09-04T00:09:06.4336566+07:00 0HLGHNNLIT9QP:00000002 [WRN] User "e891f4ff-3ea6-4505-6244-08d5f0a862c7" failed to provide the correct password. (ec8d2479)
+2018-09-04T00:09:06.4419511+07:00 0HLGHNNLIT9QP:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:09:06.4526935+07:00 0HLGHNNLIT9QP:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 82.4985ms (afa2e885)
+2018-09-04T00:09:06.4641114+07:00 0HLGHNNLIT9QP:00000002 [INF] Request finished in 103.0045ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:09:09.0135764+07:00 0HLGHNNLIT9QK:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 30 (ca22a1cb)
+2018-09-04T00:09:09.0243452+07:00 0HLGHNNLIT9QK:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:09:09.0343009+07:00 0HLGHNNLIT9QK:00000003 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:09:09.0505765+07:00 0HLGHNNLIT9QK:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:09:09.0760970+07:00 0HLGHNNLIT9QK:00000003 [WRN] Invalid password for user "e891f4ff-3ea6-4505-6244-08d5f0a862c7". (c2dce6c7)
+2018-09-04T00:09:09.0860195+07:00 0HLGHNNLIT9QK:00000003 [WRN] User "e891f4ff-3ea6-4505-6244-08d5f0a862c7" failed to provide the correct password. (ec8d2479)
+2018-09-04T00:09:09.0957616+07:00 0HLGHNNLIT9QK:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:09:09.1063049+07:00 0HLGHNNLIT9QK:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 81.8952ms (afa2e885)
+2018-09-04T00:09:09.1179341+07:00 0HLGHNNLIT9QK:00000003 [INF] Request finished in 101.0743ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:09:13.9373125+07:00 0HLGHNNLIT9QH:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-04T00:09:13.9499966+07:00 0HLGHNNLIT9QH:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:09:13.9582384+07:00 0HLGHNNLIT9QH:00000003 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-04T00:09:13.9699752+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-04T00:09:14.0004143+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-04T00:09:14.0149935+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-04T00:09:14.0263768+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-04T00:09:14.0388146+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-04T00:09:14.0470968+07:00 0HLGHNNLIT9QH:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-04T00:09:14.0560597+07:00 0HLGHNNLIT9QH:00000003 [INF] User logged in. (fdce0db4)
+2018-09-04T00:09:14.0645443+07:00 0HLGHNNLIT9QH:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-04T00:09:14.0782949+07:00 0HLGHNNLIT9QH:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 127.6865ms (afa2e885)
+2018-09-04T00:09:14.1103127+07:00 0HLGHNNLIT9QH:00000003 [INF] Request finished in 153.7467ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-04T00:09:14.1462396+07:00 0HLGHNNLIT9QG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-04T00:09:14.1655737+07:00 0HLGHNNLIT9QG:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-04T00:09:14.1861516+07:00 0HLGHNNLIT9QG:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-04T00:09:14.2193720+07:00 0HLGHNNLIT9QG:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 40.6491ms (afa2e885)
+2018-09-04T00:09:14.2933351+07:00 0HLGHNNLIT9QG:00000003 [INF] Request finished in 112.7441ms 200 text/html; charset=utf-8 (791a596a)

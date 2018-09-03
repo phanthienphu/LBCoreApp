@@ -18,6 +18,8 @@ using LBCoreApp.Application.Interfaces;
 using LBCoreApp.Data.IRepositories;
 using LBCoreApp.Data.EF.Repositories;
 using LBCoreApp.Application.Implementation;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace LBCoreApp
 {
@@ -73,13 +75,14 @@ namespace LBCoreApp
             services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService,ProductCategoryService>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());//cấu hình lại chuỗi json không đổi chữ đầu tiên thành chữ thường
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
        // public void Configure(IApplicationBuilder app, IHostingEnvironment env, DbInitializer dbInitializer)
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/LB-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
