@@ -28,14 +28,14 @@
         <div class="login_wrapper">
             <div class="animate form login_form">
                 <section class="login_content">
-                    <form>
+                    <form id="frmLogin">
                         @Html.AntiForgeryToken()
                         <h1>Dăng nhập</h1>
                         <div>
-                            <input type="text" class="form-control" placeholder="Tên đăng nhập" id="txtUserName" name="userName" required="" />
+                            <input type="text" data-required="true" class="form-control" placeholder="Tên đăng nhập" id="txtUserName" name="userName" required="" />
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="mật khẩu" id="txtPassword" name="password" required="" />
+                            <input type="password" data-required="true" class="form-control" placeholder="mật khẩu" id="txtPassword" name="password" required="" />
                         </div>
                         <div>
                             <a class="btn btn-default submit" id="btnLogin" href="#">đăng nhập</a>
@@ -60,6 +60,10 @@
     <script src="~/lib/bower_components/jquery/dist/jquery.js"></script>
     <script src="~/lib/bower_components/notifyjs/dist/notify.js"></script>
     <script src="~/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jquery-validation/localization/messages_vi.js"></script>
     <script src="~/app/Shared/Common.js"></script>
     <script src="~/app/Controllers/Login/Index.js"></script>
     <script>

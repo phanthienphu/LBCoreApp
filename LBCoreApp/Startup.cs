@@ -20,6 +20,7 @@ using LBCoreApp.Data.EF.Repositories;
 using LBCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using LBCoreApp.Helpers;
 
 namespace LBCoreApp
 {
@@ -72,6 +73,8 @@ namespace LBCoreApp
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
 
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
+
             services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService,ProductCategoryService>();
 
@@ -106,7 +109,7 @@ namespace LBCoreApp
 
                 routes.MapRoute(
                     name: "areaRoute",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
             });
             //dbInitializer.Seed().Wait();
         }
