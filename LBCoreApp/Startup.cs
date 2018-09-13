@@ -74,11 +74,16 @@ namespace LBCoreApp
             services.AddTransient<DbInitializer>();
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());//cấu hình lại chuỗi json không đổi chữ đầu tiên thành chữ thườngy
 
+            //Repositories
             services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
-            services.AddTransient<IProductCategoryService,ProductCategoryService>();
+            services.AddTransient<IFunctionRepository,FunctionRepository>();
 
-            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());//cấu hình lại chuỗi json không đổi chữ đầu tiên thành chữ thường
+            //Services
+            services.AddTransient<IProductCategoryService,ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

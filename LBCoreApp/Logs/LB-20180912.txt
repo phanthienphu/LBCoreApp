@@ -1,0 +1,844 @@
+2018-09-12T01:23:23.1620594+07:00  [WRN] No type was specified for the decimal column '"Balance"' on entity type '"AppUser"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.3305345+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"BillDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.3463261+07:00  [WRN] No type was specified for the decimal column '"OriginalPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.3662381+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.4693242+07:00  [WRN] No type was specified for the decimal column '"PromotionPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.4862988+07:00  [WRN] No type was specified for the decimal column '"Value5"' on entity type '"SystemConfig"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:23.5655312+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"WholePrice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-09-12T01:23:26.0028636+07:00  [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:23:38.3509621+07:00  [INF] Executed DbCommand ("6,443"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-12T01:23:40.1539346+07:00  [INF] Executed DbCommand ("543"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-12T01:23:41.3648143+07:00  [INF] Executed DbCommand ("839"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-09-12T01:23:43.6291274+07:00  [INF] Executed DbCommand ("940"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-09-12T01:23:45.1304051+07:00  [INF] Executed DbCommand ("468"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-09-12T01:23:47.3184697+07:00  [INF] Executed DbCommand ("452"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-09-12T01:23:49.7014948+07:00  [INF] Executed DbCommand ("364"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-09-12T01:23:50.3799207+07:00  [INF] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-09-12T01:23:51.0894321+07:00  [INF] Executed DbCommand ("410"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-09-12T01:23:52.2609215+07:00  [INF] Executed DbCommand ("559"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-12T01:23:52.7803116+07:00  [INF] Executed DbCommand ("268"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-12T01:23:53.0361468+07:00  [INF] Executed DbCommand ("217"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-09-12T01:24:04.2640956+07:00 0HLGO2EVDM9L0:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60813/  0 (ca22a1cb)
+2018-09-12T01:24:04.2499095+07:00 0HLGO2EVDM9L1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-09-12T01:24:04.4862770+07:00 0HLGO2EVDM9L0:00000001 [INF] Request finished in 624.3923ms 200  (791a596a)
+2018-09-12T01:24:18.5972949+07:00 0HLGO2EVDM9L1:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-09-12T01:24:18.6263662+07:00 0HLGO2EVDM9L1:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-09-12T01:24:18.6501199+07:00 0HLGO2EVDM9L1:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-09-12T01:24:18.8003065+07:00 0HLGO2EVDM9L1:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-09-12T01:24:18.8199042+07:00 0HLGO2EVDM9L1:00000001 [INF] Executed action "LBCoreApp.Controllers.HomeController.Index (LBCoreApp)" in 328.8936ms (afa2e885)
+2018-09-12T01:24:18.8447631+07:00 0HLGO2EVDM9L1:00000001 [INF] Request finished in 15019.507ms 302  (791a596a)
+2018-09-12T01:24:19.0105293+07:00 0HLGO2EVDM9L0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-09-12T01:24:20.1548408+07:00 0HLGO2EVDM9L0:00000002 [INF] Executing action method "LBCoreApp.Controllers.AccountController.Login (LBCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:24:20.3490936+07:00 0HLGO2EVDM9L0:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-09-12T01:24:41.3377361+07:00 0HLGO2EVDM9L0:00000002 [INF] Executed action "LBCoreApp.Controllers.AccountController.Login (LBCoreApp)" in 21633.0456ms (afa2e885)
+2018-09-12T01:24:42.2099145+07:00 0HLGO2EVDM9L0:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+dja5r0sh.lgv(604,144): error CS1031: Type expected
+dja5r0sh.lgv(604,341): error CS1031: Type expected
+dja5r0sh.lgv(604,538): error CS1031: Type expected
+dja5r0sh.lgv(604,192): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+dja5r0sh.lgv(604,389): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+dja5r0sh.lgv(604,586): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-09-12T01:24:42.5732632+07:00 0HLGO2EVDM9L0:00000002 [INF] Request finished in 23515.4886ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:24:43.5964295+07:00 0HLGO2EVDM9L1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-09-12T01:24:43.6316148+07:00 0HLGO2EVDM9L1:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-12T01:24:43.7342448+07:00 0HLGO2EVDM9L1:00000002 [INF] Request finished in 99.8409ms 200 image/x-icon (791a596a)
+2018-09-12T01:25:24.4772610+07:00 0HLGO2EVDM9L0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-12T01:25:24.5060262+07:00 0HLGO2EVDM9L0:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:25:28.1408716+07:00 0HLGO2EVDM9L0:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-12T01:25:28.7626426+07:00 0HLGO2EVDM9L0:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 4041.5667ms (afa2e885)
+2018-09-12T01:25:28.8749409+07:00 0HLGO2EVDM9L7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-09-12T01:25:28.9926618+07:00 0HLGO2EVDM9L3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-12T01:25:29.0359994+07:00 0HLGO2EVDM9L4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-12T01:25:29.0470742+07:00 0HLGO2EVDM9L5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-12T01:25:29.0673577+07:00 0HLGO2EVDM9L6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-12T01:25:29.0972753+07:00 0HLGO2EVDM9L2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-09-12T01:25:29.1239506+07:00 0HLGO2EVDM9L0:00000003 [INF] Request finished in 4355.1757ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:25:29.1299780+07:00 0HLGO2EVDM9L3:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-12T01:25:29.1366949+07:00 0HLGO2EVDM9L4:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery\dist\jquery.js"' (27b0a520)
+2018-09-12T01:25:29.1410167+07:00 0HLGO2EVDM9L5:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-09-12T01:25:29.1451630+07:00 0HLGO2EVDM9L6:00000001 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-09-12T01:25:29.1511895+07:00 0HLGO2EVDM9L1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-09-12T01:25:29.1811261+07:00 0HLGO2EVDM9L7:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-09-12T01:25:29.2044183+07:00 0HLGO2EVDM9L2:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-09-12T01:25:29.2181457+07:00 0HLGO2EVDM9L8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-12T01:25:29.2352886+07:00 0HLGO2EVDM9LC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-12T01:25:29.2617811+07:00 0HLGO2EVDM9LD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-09-12T01:25:29.2903082+07:00 0HLGO2EVDM9L1:00000003 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-09-12T01:25:29.3084665+07:00 0HLGO2EVDM9LE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-12T01:25:29.3133030+07:00 0HLGO2EVDM9LF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-12T01:25:29.3237829+07:00 0HLGO2EVDM9LC:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-09-12T01:25:29.3380561+07:00 0HLGO2EVDM9LD:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-09-12T01:25:29.3949212+07:00 0HLGO2EVDM9L6:00000001 [INF] Request finished in 472.01ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.4014835+07:00 0HLGO2EVDM9L5:00000001 [INF] Request finished in 465.7821ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.4261958+07:00 0HLGO2EVDM9LE:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-09-12T01:25:29.4410986+07:00 0HLGO2EVDM9L7:00000001 [INF] Request finished in 515.1334ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.4949034+07:00 0HLGO2EVDM9LC:00000001 [INF] Request finished in 184.2221ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.5060461+07:00 0HLGO2EVDM9L3:00000001 [INF] Request finished in 586.654ms 200 text/css (791a596a)
+2018-09-12T01:25:29.5083395+07:00 0HLGO2EVDM9LF:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-12T01:25:29.5297616+07:00 0HLGO2EVDM9L8:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-09-12T01:25:29.5379099+07:00 0HLGO2EVDM9L1:00000003 [INF] Request finished in 538.3415ms 200 text/css (791a596a)
+2018-09-12T01:25:29.5980711+07:00 0HLGO2EVDM9L2:00000001 [INF] Request finished in 681.321ms 200 text/css (791a596a)
+2018-09-12T01:25:29.6374003+07:00 0HLGO2EVDM9L9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-12T01:25:29.6524561+07:00 0HLGO2EVDM9LB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-09-12T01:25:29.6687107+07:00 0HLGO2EVDM9LD:00000001 [INF] Request finished in 346.1074ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.7327463+07:00 0HLGO2EVDM9LF:00000001 [INF] Request finished in 401.9669ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.7484064+07:00 0HLGO2EVDM9L9:00000001 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-12T01:25:29.7731735+07:00 0HLGO2EVDM9LE:00000001 [INF] Request finished in 380.8ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.9524980+07:00 0HLGO2EVDM9LB:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-09-12T01:25:29.9582611+07:00 0HLGO2EVDM9L4:00000001 [INF] Request finished in 918.4815ms 200 application/javascript (791a596a)
+2018-09-12T01:25:29.9660417+07:00 0HLGO2EVDM9LA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-09-12T01:25:30.0096706+07:00 0HLGO2EVDM9LA:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-09-12T01:25:30.0231786+07:00 0HLGO2EVDM9L9:00000001 [INF] Request finished in 956.8436ms 200 text/css (791a596a)
+2018-09-12T01:25:30.0539546+07:00 0HLGO2EVDM9LB:00000001 [INF] Request finished in 958.0214ms 200 text/css (791a596a)
+2018-09-12T01:25:30.0693665+07:00 0HLGO2EVDM9LA:00000001 [INF] Request finished in 994.4411ms 200 application/javascript (791a596a)
+2018-09-12T01:25:30.1117409+07:00 0HLGO2EVDM9L8:00000001 [INF] Request finished in 726.8448ms 200 text/css (791a596a)
+2018-09-12T01:25:30.1717197+07:00 0HLGO2EVDM9L0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-12T01:25:30.2293725+07:00 0HLGO2EVDM9L0:00000004 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-12T01:25:30.2873591+07:00 0HLGO2EVDM9L0:00000004 [INF] Request finished in 105.6855ms 200 font/woff2 (791a596a)
+2018-09-12T01:25:43.3285750+07:00 0HLGO2EVDM9L5:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-12T01:25:43.6952822+07:00 0HLGO2EVDM9L5:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:25:43.8545828+07:00 0HLGO2EVDM9L5:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:25:44.8870381+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("520"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-12T01:25:46.1095157+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("96"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-12T01:25:46.4274309+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("82"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:25:46.4769265+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-12T01:25:46.7221531+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("92"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-12T01:25:46.7610560+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:25:46.8955665+07:00 0HLGO2EVDM9L5:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-12T01:25:46.9083245+07:00 0HLGO2EVDM9L5:00000002 [INF] User logged in. (fdce0db4)
+2018-09-12T01:25:46.9344640+07:00 0HLGO2EVDM9L5:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-12T01:25:47.1842314+07:00 0HLGO2EVDM9L6:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-12T01:25:47.1961154+07:00 0HLGO2EVDM9L6:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:25:47.2059239+07:00 0HLGO2EVDM9L6:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:25:47.2198666+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-12T01:25:47.2536826+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-12T01:25:47.2644870+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:25:47.2756474+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-12T01:25:47.2883677+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-12T01:25:47.3001783+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:25:47.3095450+07:00 0HLGO2EVDM9L6:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-12T01:25:47.3181581+07:00 0HLGO2EVDM9L6:00000002 [INF] User logged in. (fdce0db4)
+2018-09-12T01:25:47.3272163+07:00 0HLGO2EVDM9L6:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-12T01:25:47.4449980+07:00 0HLGO2EVDM9L6:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 239.1527ms (afa2e885)
+2018-09-12T01:25:47.4493124+07:00 0HLGO2EVDM9L5:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 3955.4518ms (afa2e885)
+2018-09-12T01:25:47.4919157+07:00 0HLGO2EVDM9L6:00000002 [INF] Request finished in 283.4064ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-12T01:25:47.5066924+07:00 0HLGO2EVDM9L5:00000002 [INF] Request finished in 4142.5658ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-12T01:25:47.5143083+07:00 0HLGO2EVDM9L7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-12T01:25:47.5912872+07:00 0HLGO2EVDM9L7:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:25:47.5970209+07:00 0HLGO2EVDM9L1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-12T01:25:47.6215949+07:00 0HLGO2EVDM9L1:00000004 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:25:48.1628130+07:00 0HLGO2EVDM9L1:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-12T01:25:48.1762810+07:00 0HLGO2EVDM9L7:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-12T01:25:48.9258729+07:00 0HLGO2EVDM9L7:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:25:48.9400766+07:00 0HLGO2EVDM9L1:00000004 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:25:49.2360280+07:00 0HLGO2EVDM9L7:00000002 [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-09-12T01:25:49.4076334+07:00 0HLGO2EVDM9L1:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-09-12T01:25:50.7348158+07:00 0HLGO2EVDM9L1:00000004 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 3042.988ms (afa2e885)
+2018-09-12T01:25:50.7473538+07:00 0HLGO2EVDM9L7:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 3164.648ms (afa2e885)
+2018-09-12T01:25:51.3781682+07:00 0HLGO2EVDM9L7:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\Components\SideBar\Default.cshtml(6,22): Error RZ9999: An opening "(" is missing the corresponding closing ")".
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__31_7>d.MoveNext() in D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__31_7>d.MoveNext() in D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-09-12T01:25:51.4389523+07:00 0HLGO2EVDM9L1:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\Components\SideBar\Default.cshtml(6,22): Error RZ9999: An opening "(" is missing the corresponding closing ")".
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__31_7>d.MoveNext() in D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<<ExecuteAsync>b__31_7>d.MoveNext() in D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Areas\Admin\Views\Shared\_Layout.cshtml:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.<SetOutputContentAsync>d__30.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at AspNetCore._Areas_Admin_Views_Shared__Layout_cshtml.<ExecuteAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageCoreAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderLayoutAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-09-12T01:25:51.9847425+07:00 0HLGO2EVDM9L7:00000002 [INF] Request finished in 4319.0635ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:25:52.0460385+07:00 0HLGO2EVDM9L1:00000004 [INF] Request finished in 4393.6611ms 500 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:30:00.5146165+07:00 0HLGO2EVDM9LG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-12T01:30:00.5346693+07:00 0HLGO2EVDM9LG:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:30:00.5519540+07:00 0HLGO2EVDM9LG:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-12T01:30:00.7426119+07:00 0HLGO2EVDM9LG:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 65.6328ms (afa2e885)
+2018-09-12T01:30:00.7956378+07:00 0HLGO2EVDM9LG:00000001 [INF] Request finished in 242.6512ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:30:03.6846112+07:00 0HLGO2EVDM9LG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/login   (ca22a1cb)
+2018-09-12T01:30:03.6973907+07:00 0HLGO2EVDM9LG:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:30:03.7083932+07:00 0HLGO2EVDM9LG:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-12T01:30:03.8687346+07:00 0HLGO2EVDM9LG:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 25.2413ms (afa2e885)
+2018-09-12T01:30:03.9474252+07:00 0HLGO2EVDM9LG:00000002 [INF] Request finished in 198.3417ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:30:03.9540833+07:00 0HLGO2EVDM9LL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-09-12T01:30:03.9780672+07:00 0HLGO2EVDM9LH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-12T01:30:03.9832891+07:00 0HLGO2EVDM9LJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-09-12T01:30:03.9913201+07:00 0HLGO2EVDM9LN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-12T01:30:04.0088873+07:00 0HLGO2EVDM9LI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-09-12T01:30:04.0177127+07:00 0HLGO2EVDM9LK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-09-12T01:30:04.0359556+07:00 0HLGO2EVDM9LL:00000001 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-09-12T01:30:04.0628441+07:00 0HLGO2EVDM9LH:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-12T01:30:04.0671385+07:00 0HLGO2EVDM9LJ:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-09-12T01:30:04.0729626+07:00 0HLGO2EVDM9LN:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery\dist\jquery.js"' (27b0a520)
+2018-09-12T01:30:04.0825077+07:00 0HLGO2EVDM9LM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-09-12T01:30:04.1020431+07:00 0HLGO2EVDM9LI:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-09-12T01:30:04.1354797+07:00 0HLGO2EVDM9LK:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-09-12T01:30:04.1462778+07:00 0HLGO2EVDM9LL:00000001 [INF] Request finished in 177.6637ms 200 text/css (791a596a)
+2018-09-12T01:30:04.1697655+07:00 0HLGO2EVDM9LM:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-09-12T01:30:04.2422644+07:00 0HLGO2EVDM9LO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-09-12T01:30:04.2500949+07:00 0HLGO2EVDM9LR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-09-12T01:30:04.2522880+07:00 0HLGO2EVDM9LT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-09-12T01:30:04.2581087+07:00 0HLGO2EVDM9LM:00000001 [INF] Request finished in 168.9399ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.2937502+07:00 0HLGO2EVDM9LO:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-09-12T01:30:04.2996770+07:00 0HLGO2EVDM9LR:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-09-12T01:30:04.3105509+07:00 0HLGO2EVDM9LU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-09-12T01:30:04.3131058+07:00 0HLGO2EVDM9LT:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-09-12T01:30:04.3435983+07:00 0HLGO2EVDM9LR:00000001 [INF] Request finished in 167.4307ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.3830751+07:00 0HLGO2EVDM9LP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-09-12T01:30:04.3861683+07:00 0HLGO2EVDM9LT:00000001 [INF] Request finished in 136.8106ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.4053597+07:00 0HLGO2EVDM9LU:00000001 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-09-12T01:30:04.4859901+07:00 0HLGO2EVDM9LQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-09-12T01:30:04.5029868+07:00 0HLGO2EVDM9LU:00000001 [INF] Request finished in 145.2826ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.5176926+07:00 0HLGO2EVDM9LS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-09-12T01:30:04.5218340+07:00 0HLGO2EVDM9LP:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-09-12T01:30:04.5404098+07:00 0HLGO2EVDM9LQ:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-09-12T01:30:04.5734138+07:00 0HLGO2EVDM9LP:00000001 [INF] Request finished in 229.5993ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.5851881+07:00 0HLGO2EVDM9LS:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-09-12T01:30:04.5975526+07:00 0HLGO2EVDM9LQ:00000001 [INF] Request finished in 190.4506ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.6319474+07:00 0HLGO2EVDM9LV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-09-12T01:30:04.7767113+07:00 0HLGO2EVDM9LV:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-09-12T01:30:04.8286074+07:00 0HLGO2EVDM9LI:00000001 [INF] Request finished in 791.3533ms 200 text/css (791a596a)
+2018-09-12T01:30:04.8336092+07:00 0HLGO2EVDM9LS:00000001 [INF] Request finished in 218.2664ms 200 application/javascript (791a596a)
+2018-09-12T01:30:04.8537348+07:00 0HLGO2EVDM9LJ:00000001 [INF] Request finished in 759.7319ms 200 text/css (791a596a)
+2018-09-12T01:30:04.9910163+07:00 0HLGO2EVDM9LV:00000001 [INF] Request finished in 275.0166ms 200 application/javascript (791a596a)
+2018-09-12T01:30:05.0142840+07:00 0HLGO2EVDM9LO:00000001 [INF] Request finished in 885.0131ms 200 text/css (791a596a)
+2018-09-12T01:30:05.1544773+07:00 0HLGO2EVDM9LN:00000001 [INF] Request finished in 1199.773ms 200 application/javascript (791a596a)
+2018-09-12T01:30:05.1890217+07:00 0HLGO2EVDM9LH:00000001 [INF] Request finished in 1219.7114ms 200 text/css (791a596a)
+2018-09-12T01:30:05.2025796+07:00 0HLGO2EVDM9LK:00000001 [INF] Request finished in 1141.98ms 200 text/css (791a596a)
+2018-09-12T01:30:05.2657529+07:00 0HLGO2EVDM9LG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-09-12T01:30:05.2809587+07:00 0HLGO2EVDM9LG:00000003 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-09-12T01:30:05.3089027+07:00 0HLGO2EVDM9LG:00000003 [INF] Request finished in 41.7814ms 200 font/woff2 (791a596a)
+2018-09-12T01:30:05.4011888+07:00 0HLGO2EVDM9LL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-09-12T01:30:05.4202608+07:00 0HLGO2EVDM9LL:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-09-12T01:30:05.4455466+07:00 0HLGO2EVDM9LL:00000002 [INF] Request finished in 45.7028ms 200 image/x-icon (791a596a)
+2018-09-12T01:30:17.1019743+07:00 0HLGO2EVDM9LM:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-09-12T01:30:17.1156471+07:00 0HLGO2EVDM9LM:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:30:17.1282951+07:00 0HLGO2EVDM9LM:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:30:17.2516213+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("69"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-09-12T01:30:17.2827401+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-09-12T01:30:17.3123501+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("19"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:30:17.3259153+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-09-12T01:30:17.3396150+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-09-12T01:30:17.3532290+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-09-12T01:30:17.3685411+07:00 0HLGO2EVDM9LM:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-09-12T01:30:17.3794374+07:00 0HLGO2EVDM9LM:00000002 [INF] User logged in. (fdce0db4)
+2018-09-12T01:30:17.3907908+07:00 0HLGO2EVDM9LM:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-09-12T01:30:17.4041757+07:00 0HLGO2EVDM9LM:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 288.3677ms (afa2e885)
+2018-09-12T01:30:17.4506964+07:00 0HLGO2EVDM9LM:00000002 [INF] Request finished in 312.0636ms 200 application/json; charset=utf-8 (791a596a)
+2018-09-12T01:30:17.4697821+07:00 0HLGO2EVDM9LR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-09-12T01:30:17.4837629+07:00 0HLGO2EVDM9LR:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:30:17.4981063+07:00 0HLGO2EVDM9LR:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-09-12T01:30:17.5239407+07:00 0HLGO2EVDM9LR:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-09-12T01:30:17.5485378+07:00 0HLGO2EVDM9LR:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-09-12T01:30:18.8727585+07:00 0HLGO2EVDM9LR:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 1211.5113ms (afa2e885)
+2018-09-12T01:30:19.4711654+07:00 0HLGO2EVDM9LR:00000002 [INF] Request finished in 1425.2359ms 200 text/html; charset=utf-8 (791a596a)
+2018-09-12T01:30:19.5202386+07:00 0HLGO2EVDM9LT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-09-12T01:30:19.6164143+07:00 0HLGO2EVDM9LU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-09-12T01:30:19.6535752+07:00 0HLGO2EVDM9LO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-09-12T01:30:19.6626574+07:00 0HLGO2EVDM9LQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/images/img.jpg   (ca22a1cb)
+2018-09-12T01:30:19.7123417+07:00 0HLGO2EVDM9LT:00000002 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-09-12T01:30:19.7388972+07:00 0HLGO2EVDM9LJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-09-12T01:30:19.7596832+07:00 0HLGO2EVDM9LU:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-09-12T01:30:19.7646538+07:00 0HLGO2EVDM9LN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/DateJS/build/date.js   (ca22a1cb)
+2018-09-12T01:30:19.7702471+07:00 0HLGO2EVDM9LO:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-09-12T01:30:19.7776611+07:00 0HLGO2EVDM9LQ:00000002 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-09-12T01:30:19.7949664+07:00 0HLGO2EVDM9LJ:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-09-12T01:30:19.8040230+07:00 0HLGO2EVDM9LG:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootbox.js/bootbox.js   (ca22a1cb)
+2018-09-12T01:30:19.8161709+07:00 0HLGO2EVDM9LN:00000002 [INF] Sending file. Request path: '"/lib/bower_components/DateJS/build/date.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\DateJS\build\date.js"' (27b0a520)
+2018-09-12T01:30:19.8787052+07:00 0HLGO2EVDM9LL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/js/custom.js   (ca22a1cb)
+2018-09-12T01:30:19.8819128+07:00 0HLGO2EVDM9LG:00000004 [INF] Sending file. Request path: '"/lib/bower_components/bootbox.js/bootbox.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootbox.js\bootbox.js"' (27b0a520)
+2018-09-12T01:30:19.8972321+07:00 0HLGO2EVDM9LP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-09-12T01:30:19.9037573+07:00 0HLGO2EVDM9LI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-09-12T01:30:19.9095194+07:00 0HLGO2EVDM9LV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/chart.js/dist/Chart.js   (ca22a1cb)
+2018-09-12T01:30:19.9148213+07:00 0HLGO2EVDM9LS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.js   (ca22a1cb)
+2018-09-12T01:30:19.9531268+07:00 0HLGO2EVDM9LL:00000003 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-09-12T01:30:19.9596691+07:00 0HLGO2EVDM9LP:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-09-12T01:30:19.9620877+07:00 0HLGO2EVDM9LI:00000002 [INF] Sending file. Request path: '"/lib/bower_components/fastclick/lib/fastclick.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\fastclick\lib\fastclick.js"' (27b0a520)
+2018-09-12T01:30:19.9750877+07:00 0HLGO2EVDM9LV:00000002 [INF] Sending file. Request path: '"/lib/bower_components/chart.js/dist/Chart.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\chart.js\dist\Chart.js"' (27b0a520)
+2018-09-12T01:30:19.9887404+07:00 0HLGO2EVDM9LK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/moment/moment.js   (ca22a1cb)
+2018-09-12T01:30:20.0163739+07:00 0HLGO2EVDM9LH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-09-12T01:30:20.0801719+07:00 0HLGO2EVDM9LS:00000002 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.js"' (27b0a520)
+2018-09-12T01:30:20.1520327+07:00 0HLGO2EVDM9LQ:00000002 [INF] Request finished in 996.0995ms 200 image/jpeg (791a596a)
+2018-09-12T01:30:20.1590229+07:00 0HLGO2EVDM9LT:00000002 [INF] Request finished in 1175.7349ms 200 text/css (791a596a)
+2018-09-12T01:30:20.1748589+07:00 0HLGO2EVDM9LG:00000004 [INF] Request finished in 277.0719ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.1887097+07:00 0HLGO2EVDM9LK:00000002 [INF] Sending file. Request path: '"/lib/bower_components/moment/moment.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\moment\moment.js"' (27b0a520)
+2018-09-12T01:30:20.1922336+07:00 0HLGO2EVDM9LH:00000002 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-09-12T01:30:20.3694309+07:00 0HLGO2EVDM9LI:00000002 [INF] Request finished in 387.5872ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.4003727+07:00 0HLGO2EVDM9LS:00000002 [INF] Request finished in 421.7253ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.4258267+07:00 0HLGO2EVDM9LL:00000003 [INF] Request finished in 491.3172ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.4791791+07:00 0HLGO2EVDM9LO:00000002 [INF] Request finished in 958.149ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.5690002+07:00 0HLGO2EVDM9LN:00000002 [INF] Request finished in 778.031ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.6219503+07:00 0HLGO2EVDM9LK:00000002 [INF] Request finished in 592.3021ms 200 application/javascript (791a596a)
+2018-09-12T01:30:20.7843295+07:00 0HLGO2EVDM9LP:00000002 [INF] Request finished in 679.6915ms 200 application/javascript (791a596a)
+2018-09-12T01:30:21.1196428+07:00 0HLGO2EVDM9LU:00000002 [INF] Request finished in 1805.2816ms 200 text/css (791a596a)
+2018-09-12T01:30:21.4411831+07:00 0HLGO2EVDM9LH:00000002 [INF] Request finished in 636.0254ms 200 application/javascript (791a596a)
+2018-09-12T01:30:21.5715448+07:00 0HLGO2EVDM9LM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-09-12T01:30:21.5854199+07:00 0HLGO2EVDM9LJ:00000002 [INF] Request finished in 2047.2537ms 200 application/javascript (791a596a)
+2018-09-12T01:30:21.6798435+07:00 0HLGO2EVDM9LM:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-09-12T01:30:21.7728521+07:00 0HLGO2EVDM9LV:00000002 [INF] Request finished in 1820.6552ms 200 application/javascript (791a596a)
+2018-09-12T01:30:21.8156925+07:00 0HLGO2EVDM9LM:00000003 [INF] Request finished in 482.6297ms 200 font/woff2 (791a596a)
+2018-09-12T01:31:24.2938245+07:00 0HLGO2EVDM9M0:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-09-12T01:31:24.3228010+07:00 0HLGO2EVDM9M0:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.AccountController.Logout (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:31:24.3472870+07:00 0HLGO2EVDM9M0:00000001 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-09-12T01:31:24.3614301+07:00 0HLGO2EVDM9M0:00000001 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-09-12T01:31:24.3814960+07:00 0HLGO2EVDM9M0:00000001 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-09-12T01:31:24.3961603+07:00 0HLGO2EVDM9M0:00000001 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-09-12T01:31:24.4082598+07:00 0HLGO2EVDM9M0:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.AccountController.Logout (LBCoreApp)" in 85.2108ms (afa2e885)
+2018-09-12T01:31:24.4342374+07:00 0HLGO2EVDM9M0:00000001 [INF] Request finished in 131.6533ms 302  (791a596a)
+2018-09-12T01:31:24.4883119+07:00 0HLGO2EVDM9M0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Login/Index   (ca22a1cb)
+2018-09-12T01:31:24.5128542+07:00 0HLGO2EVDM9M0:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-09-12T01:31:24.5341844+07:00 0HLGO2EVDM9M0:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-09-12T01:31:24.5602759+07:00 0HLGO2EVDM9M0:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 46.0435ms (afa2e885)
+2018-09-12T01:31:24.8227873+07:00 0HLGO2EVDM9M0:00000002 [INF] Request finished in 119.1578ms 200 text/html; charset=utf-8 (791a596a)

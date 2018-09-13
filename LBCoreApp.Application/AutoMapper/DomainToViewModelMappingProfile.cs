@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LBCoreApp.Application.ViewModels.Product;
+using LBCoreApp.Application.ViewModels.System;
 using LBCoreApp.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace LBCoreApp.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<ProductCategory, ProductCategoryViewModel>();
+            CreateMap<Function, FunctionViewModel>();
         }
     }
 }
