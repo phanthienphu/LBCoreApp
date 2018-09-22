@@ -1406,9 +1406,61 @@
     <Content Include="wwwroot\lib\bower_components\jquery\.bower.json" />
     <Content Include="wwwroot\lib\bower_components\jquery\AUTHORS.txt" />
     <Content Include="wwwroot\lib\bower_components\jquery\bower.json" />
+    <Content Include="wwwroot\lib\bower_components\jquery\component.json" />
+    <Content Include="wwwroot\lib\bower_components\jquery\composer.json" />
     <Content Include="wwwroot\lib\bower_components\jquery\external\sizzle\LICENSE.txt" />
     <Content Include="wwwroot\lib\bower_components\jquery\LICENSE.txt" />
+    <Content Include="wwwroot\lib\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="wwwroot\lib\bower_components\jquery\package.json" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\benchmarker.css" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\closest.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\css.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\event.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\filter.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\find.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\index.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\speed\slice.vs.concat.html" />
     <Content Include="wwwroot\lib\bower_components\jquery\src\.eslintrc.json" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\1x1.jpg" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\ajax\unreleasedXHR.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\cleanScript.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\core\cc_on.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\core\dynamic_ready.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\dashboard.xml" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\dimensions\documentLarge.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\dimensions\documentSmall.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\event\focusElem.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\event\onbeforeunload.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\event\promiseReady.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\event\syncReady.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\iframe.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\manipulation\iframe-denied.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\name.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\absolute.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\body.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\fixed.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\relative.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\scroll.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\static.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\offset\table.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\selector\html5_selector.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\selector\sizzle_cache.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\support\bodyBackground.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\support\boxSizing.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\support\shrinkWrapBlocks.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\support\testElementCrash.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\test.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\test2.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\test3.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\testsuite.css" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\ua.txt" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\data\with_fries.xml" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\delegatetest.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\hovertest.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\index.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\localfile.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\networkerror.html" />
+    <Content Include="wwwroot\lib\bower_components\jquery\test\readywait.html" />
     <Content Include="wwwroot\lib\bower_components\moment\.bower.json" />
     <Content Include="wwwroot\lib\bower_components\moment\bower.json" />
     <Content Include="wwwroot\lib\bower_components\moment\package-lock.json" />
@@ -1434,6 +1486,12 @@
     <Content Include="wwwroot\lib\bower_components\nprogress\nprogress.css" />
     <Content Include="wwwroot\lib\bower_components\nprogress\support\extras.css" />
     <Content Include="wwwroot\lib\bower_components\nprogress\support\style.css" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\.bower.json" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\bower.json" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\examples\bootstrap-v3.html" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\examples\index.html" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\package.json" />
+    <Content Include="wwwroot\lib\bower_components\twbs-pagination\twbs-pagination.jquery.json" />
   </ItemGroup>
 
 
@@ -5983,6 +6041,15 @@
     <None Include="wwwroot\lib\bower_components\jquery-sparkline\src\vcanvas-base.js" />
     <None Include="wwwroot\lib\bower_components\jquery-sparkline\src\vcanvas-canvas.js" />
     <None Include="wwwroot\lib\bower_components\jquery-sparkline\src\vcanvas-vml.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\.editorconfig" />
+    <None Include="wwwroot\lib\bower_components\jquery\.gitattributes" />
+    <None Include="wwwroot\lib\bower_components\jquery\.gitignore" />
+    <None Include="wwwroot\lib\bower_components\jquery\.gitmodules" />
+    <None Include="wwwroot\lib\bower_components\jquery\.jshintrc" />
+    <None Include="wwwroot\lib\bower_components\jquery\.mailmap" />
+    <None Include="wwwroot\lib\bower_components\jquery\build\release-notes.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\build\release.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\CONTRIBUTING.md" />
     <None Include="wwwroot\lib\bower_components\jquery\dist\core.js" />
     <None Include="wwwroot\lib\bower_components\jquery\dist\jquery.js" />
     <None Include="wwwroot\lib\bower_components\jquery\dist\jquery.min.js" />
@@ -5993,7 +6060,16 @@
     <None Include="wwwroot\lib\bower_components\jquery\external\sizzle\dist\sizzle.js" />
     <None Include="wwwroot\lib\bower_components\jquery\external\sizzle\dist\sizzle.min.js" />
     <None Include="wwwroot\lib\bower_components\jquery\external\sizzle\dist\sizzle.min.map" />
+    <None Include="wwwroot\lib\bower_components\jquery\Gruntfile.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\jquery-migrate.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\jquery-migrate.min.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\jquery.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\jquery.min.map" />
     <None Include="wwwroot\lib\bower_components\jquery\README.md" />
+    <None Include="wwwroot\lib\bower_components\jquery\speed\benchmark.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\speed\benchmarker.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\speed\jquery-basis.js" />
     <None Include="wwwroot\lib\bower_components\jquery\src\ajax.js" />
     <None Include="wwwroot\lib\bower_components\jquery\src\ajax\jsonp.js" />
     <None Include="wwwroot\lib\bower_components\jquery\src\ajax\load.js" />
@@ -6100,6 +6176,62 @@
     <None Include="wwwroot\lib\bower_components\jquery\src\var\support.js" />
     <None Include="wwwroot\lib\bower_components\jquery\src\var\toString.js" />
     <None Include="wwwroot\lib\bower_components\jquery\src\wrap.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\.jshintignore" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\.jshintrc" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\atom+xml.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\badcall.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\badjson.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\core\dont_return.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\echoData.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\echoQuery.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\errorWithJSON.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\errorWithText.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\etag.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\evalScript.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\event\longLoadScript.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\headers.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\if_modified_since.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\jquery-1.9.1.ajax_xhr.min.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\json.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\jsonp.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\json_obj.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\name.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\nocontent.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\params_html.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\readywaitasset.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\readywaitloader.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\script.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\statusText.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\support\csp.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\support\csp.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\test.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\test.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\testinit.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\testrunner.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\text.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\data\with_fries_over_jsonp.php" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\jquery.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\ajax.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\attributes.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\callbacks.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\core.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\css.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\data.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\deferred.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\deprecated.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\dimensions.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\effects.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\event.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\exports.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\manipulation.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\offset.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\queue.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\selector.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\serialize.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\support.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\traversing.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\unit\wrap.js" />
+    <None Include="wwwroot\lib\bower_components\jquery\test\xhtml.php" />
     <None Include="wwwroot\lib\bower_components\moment\CHANGELOG.md" />
     <None Include="wwwroot\lib\bower_components\moment\LICENSE" />
     <None Include="wwwroot\lib\bower_components\moment\locale\af.js" />
@@ -6496,6 +6628,11 @@
     <None Include="wwwroot\lib\bower_components\nprogress\Notes.md" />
     <None Include="wwwroot\lib\bower_components\nprogress\nprogress.js" />
     <None Include="wwwroot\lib\bower_components\nprogress\Readme.md" />
+    <None Include="wwwroot\lib\bower_components\twbs-pagination\Gruntfile.js" />
+    <None Include="wwwroot\lib\bower_components\twbs-pagination\jquery.twbsPagination.js" />
+    <None Include="wwwroot\lib\bower_components\twbs-pagination\jquery.twbsPagination.min.js" />
+    <None Include="wwwroot\lib\bower_components\twbs-pagination\LICENSE" />
+    <None Include="wwwroot\lib\bower_components\twbs-pagination\README.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -6510,6 +6647,10 @@
     <TypeScriptCompile Include="wwwroot\lib\bower_components\gentelella\vendors\devbridge-autocomplete\src\jquery.autocomplete.d.ts" />
     <TypeScriptCompile Include="wwwroot\lib\bower_components\gentelella\vendors\moment\moment.d.ts" />
     <TypeScriptCompile Include="wwwroot\lib\bower_components\moment\moment.d.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\bower_components\jquery\test\qunit\" />
   </ItemGroup>
 
 </Project>
