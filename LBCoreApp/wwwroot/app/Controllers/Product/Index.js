@@ -1,5 +1,6 @@
 ﻿var productController = function () {
     this.Initialize = function () {
+        LoadCategory();
         LoadData();
         RegisterEvents();
     }
@@ -11,6 +12,36 @@
             common.configs.pageIndex = 1;
             LoadData(true);
         });
+
+        $('#btnSearch').on('click', function () {
+            LoadData();
+        });
+
+        $('#txtKeyword').on('keypress', function (e) {
+            if (e.which === 13) {
+                //e.preventDefault();
+                LoadData();
+            }
+        });
+    }
+
+    function LoadCategory() {
+        $.ajax({
+            type: 'GET',
+            url: '/admin/product/GetAllCategories',
+            dataType: 'json',
+            success: function (response) {
+                var render = "<option value=''>------Chọn danh mục------</option>";
+                $.each(response, function (i, item) {
+                    render = "<option value=' " + item.Id + " ' >" + item.Name + "</option>"
+                });
+                $('#ddlCategorySearch').html(render);
+            },
+            error: function (status) {
+                console.log(status);
+                common.notify('Cannot loading product category data!', 'error');
+            }
+        })
     }
 
     function LoadData(isPageChanged) {
@@ -20,7 +51,7 @@
             type: 'GET',
             url: '/admin/product/GetAllPaging',
             data: {
-                categoryId: null,
+                categoryId: $('#ddlCategorySearch').val(),
                 keyword: $('#txtKeyword').val(),
                 page: common.configs.pageIndex,
                 pageSize: common.configs.pageSize

@@ -21,6 +21,7 @@ using LBCoreApp.Application.Implementation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using LBCoreApp.Helpers;
+using LBCoreApp.Infrastructure.Interfaces;
 
 namespace LBCoreApp
 {
@@ -75,6 +76,9 @@ namespace LBCoreApp
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());//cấu hình lại chuỗi json không đổi chữ đầu tiên thành chữ thườngy
+
+            services.AddTransient(typeof(IUnitOfWork),typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
             //Repositories
             services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
