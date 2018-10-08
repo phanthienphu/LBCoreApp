@@ -33,7 +33,7 @@
             success: function (response) {
                 var render = "<option value=''>------Chọn danh mục------</option>";
                 $.each(response, function (i, item) {
-                    render = "<option value=' " + item.Id + " ' >" + item.Name + "</option>"
+                    render += "<option value=' " + item.Id + " ' >" + item.Name + "</option>"
                 });
                 $('#ddlCategorySearch').html(render);
             },
