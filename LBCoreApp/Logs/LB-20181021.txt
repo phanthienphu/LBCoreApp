@@ -1,0 +1,456 @@
+2018-10-21T14:34:10.2128000+07:00  [WRN] No type was specified for the decimal column '"Balance"' on entity type '"AppUser"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.4357123+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"BillDetail"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.7263617+07:00  [WRN] No type was specified for the decimal column '"OriginalPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.8522198+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.8783583+07:00  [WRN] No type was specified for the decimal column '"PromotionPrice"' on entity type '"Product"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.9026218+07:00  [WRN] No type was specified for the decimal column '"Value5"' on entity type '"SystemConfig"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:10.9987506+07:00  [WRN] No type was specified for the decimal column '"Price"' on entity type '"WholePrice"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'. (b5b4253a)
+2018-10-21T14:34:11.7956968+07:00  [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:34:16.1190733+07:00  [INF] Executed DbCommand ("653"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-21T14:34:16.6421600+07:00  [INF] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-21T14:34:16.8338632+07:00  [INF] Executed DbCommand ("123"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2018-10-21T14:34:17.3096459+07:00  [INF] Executed DbCommand ("100"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2018-10-21T14:34:17.4117372+07:00  [INF] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2018-10-21T14:34:17.4547517+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2018-10-21T14:34:17.5012474+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2018-10-21T14:34:17.5398785+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2018-10-21T14:34:17.5616770+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2018-10-21T14:34:17.6175463+07:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-21T14:34:17.6361172+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-21T14:34:17.6758692+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-10-21T14:34:19.1193109+07:00 0HLHN4UE4OPQ5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/   (ca22a1cb)
+2018-10-21T14:34:19.1174268+07:00 0HLHN4UE4OPQ4:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:60813/  0 (ca22a1cb)
+2018-10-21T14:34:19.2278007+07:00 0HLHN4UE4OPQ4:00000001 [INF] Request finished in 415.6289ms 200  (791a596a)
+2018-10-21T14:34:22.2263004+07:00 0HLHN4UE4OPQ5:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2018-10-21T14:34:22.2598539+07:00 0HLHN4UE4OPQ5:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-10-21T14:34:22.3127277+07:00 0HLHN4UE4OPQ5:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-10-21T14:34:22.4387608+07:00 0HLHN4UE4OPQ5:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-10-21T14:34:22.4674156+07:00 0HLHN4UE4OPQ5:00000001 [INF] Executed action "LBCoreApp.Controllers.HomeController.Index (LBCoreApp)" in 351.3038ms (afa2e885)
+2018-10-21T14:34:22.8494226+07:00 0HLHN4UE4OPQ5:00000001 [INF] Request finished in 3695.7213ms 302  (791a596a)
+2018-10-21T14:34:23.5187899+07:00 0HLHN4UE4OPQ4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-10-21T14:34:24.0105950+07:00 0HLHN4UE4OPQ4:00000002 [INF] Executing action method "LBCoreApp.Controllers.AccountController.Login (LBCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:34:24.2918064+07:00 0HLHN4UE4OPQ4:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-10-21T14:34:37.5989232+07:00 0HLHN4UE4OPQ4:00000002 [INF] Executed action "LBCoreApp.Controllers.AccountController.Login (LBCoreApp)" in 13920.7628ms (afa2e885)
+2018-10-21T14:34:38.1996567+07:00 0HLHN4UE4OPQ4:00000002 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Views\Account\Login.cshtml(21,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Views\Account\Login.cshtml(22,135): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\Views\Account\Login.cshtml(23,147): error CS1061: 'LoginViewModel' does not contain a definition for 'Email' and no extension method 'Email' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeResultAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResultFilterAsync>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-10-21T14:34:38.7349217+07:00 0HLHN4UE4OPQ4:00000002 [INF] Request finished in 16005.4953ms 500 text/html; charset=utf-8 (791a596a)
+2018-10-21T14:34:40.1975508+07:00 0HLHN4UE4OPQ5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/favicon.ico   (ca22a1cb)
+2018-10-21T14:34:40.2367103+07:00 0HLHN4UE4OPQ5:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\favicon.ico"' (27b0a520)
+2018-10-21T14:34:40.2985210+07:00 0HLHN4UE4OPQ5:00000002 [INF] Request finished in 115.0213ms 200 image/x-icon (791a596a)
+2018-10-21T14:36:31.8211361+07:00 0HLHN4UE4OPQ6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin   (ca22a1cb)
+2018-10-21T14:36:31.8689714+07:00 0HLHN4UE4OPQ6:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:36:35.4042130+07:00 0HLHN4UE4OPQ6:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-10-21T14:36:36.2350470+07:00 0HLHN4UE4OPQ6:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Index (LBCoreApp)" in 4102.1009ms (afa2e885)
+2018-10-21T14:36:36.2809865+07:00 0HLHN4UE4OPQ6:00000001 [INF] Request finished in 4454.3298ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-21T14:36:36.2989541+07:00 0HLHN4UE4OPQ7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-21T14:36:36.3443045+07:00 0HLHN4UE4OPQ9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-10-21T14:36:36.3581112+07:00 0HLHN4UE4OPQ8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/animate.css/animate.css   (ca22a1cb)
+2018-10-21T14:36:36.5036495+07:00 0HLHN4UE4OPQ9:00000001 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/css/font-awesome.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-10-21T14:36:36.6597732+07:00 0HLHN4UE4OPQ7:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-21T14:36:36.6625242+07:00 0HLHN4UE4OPQ8:00000001 [INF] Sending file. Request path: '"/lib/bower_components/animate.css/animate.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\animate.css\animate.css"' (27b0a520)
+2018-10-21T14:36:36.6804478+07:00 0HLHN4UE4OPQA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/css/custom.css   (ca22a1cb)
+2018-10-21T14:36:36.6996964+07:00 0HLHN4UE4OPQD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Shared/Common.js   (ca22a1cb)
+2018-10-21T14:36:36.7107546+07:00 0HLHN4UE4OPQB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-10-21T14:36:36.7314003+07:00 0HLHN4UE4OPQB:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-10-21T14:36:36.7634196+07:00 0HLHN4UE4OPQC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-10-21T14:36:37.1141686+07:00 0HLHN4UE4OPQD:00000001 [INF] Sending file. Request path: '"/app/Shared/Common.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Shared\Common.js"' (27b0a520)
+2018-10-21T14:36:37.1479924+07:00 0HLHN4UE4OPQE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-10-21T14:36:37.1621995+07:00 0HLHN4UE4OPQF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-10-21T14:36:37.1956145+07:00 0HLHN4UE4OPQC:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-10-21T14:36:37.2314130+07:00 0HLHN4UE4OPQE:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-10-21T14:36:37.2448227+07:00 0HLHN4UE4OPQA:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-10-21T14:36:37.3407437+07:00 0HLHN4UE4OPQF:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-10-21T14:36:37.5119868+07:00 0HLHN4UE4OPQG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.css   (ca22a1cb)
+2018-10-21T14:36:37.5351670+07:00 0HLHN4UE4OPQH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/notify.js   (ca22a1cb)
+2018-10-21T14:36:37.7887596+07:00 0HLHN4UE4OPQI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-10-21T14:36:37.8318502+07:00 0HLHN4UE4OPQH:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/notify.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\notify.js"' (27b0a520)
+2018-10-21T14:36:37.9476260+07:00 0HLHN4UE4OPQJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2018-10-21T14:36:38.1991477+07:00 0HLHN4UE4OPQK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-10-21T14:36:38.2771460+07:00 0HLHN4UE4OPQG:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.css"' (27b0a520)
+2018-10-21T14:36:38.3069237+07:00 0HLHN4UE4OPQI:00000001 [INF] Sending file. Request path: '"/lib/bower_components/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-10-21T14:36:38.3525351+07:00 0HLHN4UE4OPQJ:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.js"' (27b0a520)
+2018-10-21T14:36:38.4182912+07:00 0HLHN4UE4OPQK:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-10-21T14:36:39.4627902+07:00 0HLHN4UE4OPQ9:00000001 [INF] Request finished in 2142.8022ms 200 text/css (791a596a)
+2018-10-21T14:36:39.6479915+07:00 0HLHN4UE4OPQK:00000001 [INF] Request finished in 665.5592ms 200 application/javascript (791a596a)
+2018-10-21T14:36:39.6733913+07:00 0HLHN4UE4OPQJ:00000001 [INF] Request finished in 1843.8979ms 200 application/javascript (791a596a)
+2018-10-21T14:36:39.7431626+07:00 0HLHN4UE4OPQL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Login/Index.js   (ca22a1cb)
+2018-10-21T14:36:39.7538370+07:00 0HLHN4UE4OPQI:00000001 [INF] Request finished in 2026.8739ms 200 application/javascript (791a596a)
+2018-10-21T14:36:39.7891607+07:00 0HLHN4UE4OPQD:00000001 [INF] Request finished in 1876.7493ms 200 application/javascript (791a596a)
+2018-10-21T14:36:39.8133313+07:00 0HLHN4UE4OPQC:00000001 [INF] Request finished in 2197.7465ms 200 application/javascript (791a596a)
+2018-10-21T14:36:39.8972432+07:00 0HLHN4UE4OPQ8:00000001 [INF] Request finished in 3563.6494ms 200 text/css (791a596a)
+2018-10-21T14:36:39.9623227+07:00 0HLHN4UE4OPQF:00000001 [INF] Request finished in 2478.3115ms 200 application/javascript (791a596a)
+2018-10-21T14:36:40.0358609+07:00 0HLHN4UE4OPQA:00000001 [INF] Request finished in 3445.1608ms 200 text/css (791a596a)
+2018-10-21T14:36:40.1769283+07:00 0HLHN4UE4OPQE:00000001 [INF] Request finished in 1870.6705ms 200 text/css (791a596a)
+2018-10-21T14:36:40.1951286+07:00 0HLHN4UE4OPQB:00000001 [INF] Request finished in 3261.7125ms 200 application/javascript (791a596a)
+2018-10-21T14:36:40.2189356+07:00 0HLHN4UE4OPQ7:00000001 [INF] Request finished in 3814.2143ms 200 text/css (791a596a)
+2018-10-21T14:36:40.2391336+07:00 0HLHN4UE4OPQL:00000001 [INF] Sending file. Request path: '"/app/Controllers/Login/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Login\Index.js"' (27b0a520)
+2018-10-21T14:36:40.4004297+07:00 0HLHN4UE4OPQH:00000001 [INF] Request finished in 2047.7431ms 200 application/javascript (791a596a)
+2018-10-21T14:36:40.4053333+07:00 0HLHN4UE4OPQG:00000001 [INF] Request finished in 2067.1315ms 200 text/css (791a596a)
+2018-10-21T14:36:40.4341572+07:00 0HLHN4UE4OPQ6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-10-21T14:36:40.4588774+07:00 0HLHN4UE4OPQL:00000001 [INF] Request finished in 2067.3148ms 200 application/javascript (791a596a)
+2018-10-21T14:36:40.4781631+07:00 0HLHN4UE4OPQ6:00000002 [INF] Sending file. Request path: '"/lib/bower_components/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-10-21T14:36:40.6421687+07:00 0HLHN4UE4OPQ6:00000002 [INF] Request finished in 350.7372ms 200 font/woff2 (791a596a)
+2018-10-21T14:39:05.8450242+07:00 0HLHN4UE4OPQM:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-21T14:39:06.2571346+07:00 0HLHN4UE4OPQM:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:06.3301511+07:00 0HLHN4UE4OPQM:00000001 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:07.5992917+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("756"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-21T14:39:08.2365345+07:00 0HLHN4UE4OPQN:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44374/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-10-21T14:39:08.2527368+07:00 0HLHN4UE4OPQN:00000001 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" with arguments (["LBCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:08.2683831+07:00 0HLHN4UE4OPQN:00000001 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:08.3313804+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-10-21T14:39:09.3881667+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("139"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-21T14:39:09.5013757+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("336"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-10-21T14:39:10.0426125+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("292"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-21T14:39:10.0618693+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("304"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-21T14:39:10.1360368+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-21T14:39:10.1708940+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-10-21T14:39:10.3244222+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("33"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-21T14:39:10.3379171+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("33"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-10-21T14:39:10.3638424+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-21T14:39:10.3839822+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-10-21T14:39:10.5185155+07:00 0HLHN4UE4OPQN:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-21T14:39:10.5243441+07:00 0HLHN4UE4OPQM:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-10-21T14:39:10.5453698+07:00 0HLHN4UE4OPQN:00000001 [INF] User logged in. (fdce0db4)
+2018-10-21T14:39:10.5508131+07:00 0HLHN4UE4OPQM:00000001 [INF] User logged in. (fdce0db4)
+2018-10-21T14:39:10.6025282+07:00 0HLHN4UE4OPQM:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:39:10.6825154+07:00 0HLHN4UE4OPQN:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:39:11.1796651+07:00 0HLHN4UE4OPQN:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 2918.6245ms (afa2e885)
+2018-10-21T14:39:11.1974972+07:00 0HLHN4UE4OPQM:00000001 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.LoginController.Authen (LBCoreApp)" in 5199.9436ms (afa2e885)
+2018-10-21T14:39:11.2516793+07:00 0HLHN4UE4OPQM:00000001 [INF] Request finished in 5378.8075ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:39:11.2612807+07:00 0HLHN4UE4OPQN:00000001 [INF] Request finished in 2992.4315ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:39:11.2985052+07:00 0HLHN4UE4OPQM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-10-21T14:39:11.3051584+07:00 0HLHN4UE4OPQN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/Home/Index   (ca22a1cb)
+2018-10-21T14:39:11.3881748+07:00 0HLHN4UE4OPQN:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:39:11.4072781+07:00 0HLHN4UE4OPQM:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:39:11.4301502+07:00 0HLHN4UE4OPQM:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:11.4835545+07:00 0HLHN4UE4OPQN:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:12.1531266+07:00 0HLHN4UE4OPQN:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-21T14:39:12.1667162+07:00 0HLHN4UE4OPQM:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-10-21T14:39:13.2381125+07:00 0HLHN4UE4OPQM:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:13.2590921+07:00 0HLHN4UE4OPQN:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:13.5389752+07:00 0HLHN4UE4OPQM:00000002 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-10-21T14:39:13.5811966+07:00 0HLHN4UE4OPQN:00000002 [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-10-21T14:39:15.1905471+07:00 0HLHN4UE4OPQN:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 3671.1419ms (afa2e885)
+2018-10-21T14:39:15.2245474+07:00 0HLHN4UE4OPQM:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.HomeController.Index (LBCoreApp)" in 3660.3775ms (afa2e885)
+2018-10-21T14:39:15.2785838+07:00 0HLHN4UE4OPQM:00000002 [INF] Request finished in 3947.6536ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-21T14:39:15.3097290+07:00 0HLHN4UE4OPQP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-10-21T14:39:15.3508720+07:00 0HLHN4UE4OPQP:00000001 [INF] Sending file. Request path: '"/lib/bower_components/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-10-21T14:39:15.3673979+07:00 0HLHN4UE4OPQO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-10-21T14:39:15.4560104+07:00 0HLHN4UE4OPQN:00000002 [INF] Request finished in 3933.3452ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-21T14:39:15.6372411+07:00 0HLHN4UE4OPQM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-10-21T14:39:15.6447749+07:00 0HLHN4UE4OPQQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-10-21T14:39:15.6556140+07:00 0HLHN4UE4OPQO:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-10-21T14:39:15.6670399+07:00 0HLHN4UE4OPQR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/images/img.jpg   (ca22a1cb)
+2018-10-21T14:39:15.7330037+07:00 0HLHN4UE4OPQT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-10-21T14:39:15.7718293+07:00 0HLHN4UE4OPQP:00000001 [INF] Request finished in 316.9203ms 200 application/javascript (791a596a)
+2018-10-21T14:39:15.8672184+07:00 0HLHN4UE4OPQM:00000003 [INF] Sending file. Request path: '"/lib/bower_components/fastclick/lib/fastclick.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\fastclick\lib\fastclick.js"' (27b0a520)
+2018-10-21T14:39:15.8841163+07:00 0HLHN4UE4OPQQ:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-10-21T14:39:15.8872789+07:00 0HLHN4UE4OPQT:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-10-21T14:39:15.9006706+07:00 0HLHN4UE4OPQS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/chart.js/dist/Chart.js   (ca22a1cb)
+2018-10-21T14:39:15.9041012+07:00 0HLHN4UE4OPQR:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-10-21T14:39:15.9121648+07:00 0HLHN4UE4OPR3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/DateJS/build/date.js   (ca22a1cb)
+2018-10-21T14:39:15.9469278+07:00 0HLHN4UE4OPQV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/mustache.js/mustache.js   (ca22a1cb)
+2018-10-21T14:39:16.0207324+07:00 0HLHN4UE4OPQU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/nprogress/nprogress.js   (ca22a1cb)
+2018-10-21T14:39:16.0303048+07:00 0HLHN4UE4OPQS:00000001 [INF] Sending file. Request path: '"/lib/bower_components/chart.js/dist/Chart.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\chart.js\dist\Chart.js"' (27b0a520)
+2018-10-21T14:39:16.0405285+07:00 0HLHN4UE4OPR4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin-side/js/custom.js   (ca22a1cb)
+2018-10-21T14:39:16.0681092+07:00 0HLHN4UE4OPR2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-10-21T14:39:16.0927546+07:00 0HLHN4UE4OPR0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/moment/moment.js   (ca22a1cb)
+2018-10-21T14:39:16.0967771+07:00 0HLHN4UE4OPQT:00000001 [INF] Request finished in 427.2972ms 200 application/javascript (791a596a)
+2018-10-21T14:39:16.1588196+07:00 0HLHN4UE4OPR3:00000001 [INF] Sending file. Request path: '"/lib/bower_components/DateJS/build/date.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\DateJS\build\date.js"' (27b0a520)
+2018-10-21T14:39:16.1710071+07:00 0HLHN4UE4OPQU:00000001 [INF] Sending file. Request path: '"/lib/bower_components/nprogress/nprogress.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\nprogress\nprogress.js"' (27b0a520)
+2018-10-21T14:39:16.1868892+07:00 0HLHN4UE4OPR2:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-10-21T14:39:16.1999635+07:00 0HLHN4UE4OPR4:00000001 [INF] Sending file. Request path: '"/admin-side/js/custom.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\admin-side\js\custom.js"' (27b0a520)
+2018-10-21T14:39:16.2090672+07:00 0HLHN4UE4OPR0:00000001 [INF] Sending file. Request path: '"/lib/bower_components/moment/moment.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\moment\moment.js"' (27b0a520)
+2018-10-21T14:39:16.2153620+07:00 0HLHN4UE4OPQQ:00000001 [INF] Request finished in 688.4333ms 200 text/css (791a596a)
+2018-10-21T14:39:16.2734084+07:00 0HLHN4UE4OPR1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-10-21T14:39:16.3232754+07:00 0HLHN4UE4OPQR:00000001 [INF] Request finished in 730.5408ms 200 image/jpeg (791a596a)
+2018-10-21T14:39:16.5470067+07:00 0HLHN4UE4OPQV:00000001 [INF] Sending file. Request path: '"/lib/bower_components/mustache.js/mustache.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\mustache.js\mustache.js"' (27b0a520)
+2018-10-21T14:39:16.6471645+07:00 0HLHN4UE4OPQU:00000001 [INF] Request finished in 393.7912ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.0923462+07:00 0HLHN4UE4OPR3:00000001 [INF] Request finished in 801.1848ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.0991677+07:00 0HLHN4UE4OPQO:00000001 [INF] Request finished in 1175.0455ms 200 text/css (791a596a)
+2018-10-21T14:39:17.1177879+07:00 0HLHN4UE4OPQV:00000001 [INF] Request finished in 1063.4033ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.1242667+07:00 0HLHN4UE4OPR2:00000001 [INF] Request finished in 667.5719ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.1543251+07:00 0HLHN4UE4OPR0:00000001 [INF] Request finished in 828.3397ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.1816857+07:00 0HLHN4UE4OPQP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-10-21T14:39:17.1883728+07:00 0HLHN4UE4OPQM:00000003 [INF] Request finished in 706.2206ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.2059909+07:00 0HLHN4UE4OPR1:00000001 [INF] Sending file. Request path: '"/lib/bower_components/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-10-21T14:39:17.2165841+07:00 0HLHN4UE4OPR5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/bootbox.js/bootbox.js   (ca22a1cb)
+2018-10-21T14:39:17.2669636+07:00 0HLHN4UE4OPR4:00000001 [INF] Request finished in 929.0146ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.2868717+07:00 0HLHN4UE4OPR5:00000001 [INF] Sending file. Request path: '"/lib/bower_components/bootbox.js/bootbox.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\bootbox.js\bootbox.js"' (27b0a520)
+2018-10-21T14:39:17.3478288+07:00 0HLHN4UE4OPQP:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-10-21T14:39:17.3514354+07:00 0HLHN4UE4OPR1:00000001 [INF] Request finished in 1761.8961ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.4286475+07:00 0HLHN4UE4OPQS:00000001 [INF] Request finished in 1625.2296ms 200 application/javascript (791a596a)
+2018-10-21T14:39:17.4478305+07:00 0HLHN4UE4OPQP:00000002 [INF] Request finished in 295.7328ms 200 font/woff2 (791a596a)
+2018-10-21T14:39:17.4698022+07:00 0HLHN4UE4OPR5:00000001 [INF] Request finished in 1859.0686ms 200 application/javascript (791a596a)
+2018-10-21T14:39:20.1015266+07:00 0HLHN4UE4OPQT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/admin/productcategory/index   (ca22a1cb)
+2018-10-21T14:39:20.1185674+07:00 0HLHN4UE4OPQT:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:39:20.1310335+07:00 0HLHN4UE4OPQT:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:20.6783461+07:00 0HLHN4UE4OPQT:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/ProductCategory/Index.cshtml". (9707eebe)
+2018-10-21T14:39:21.3873999+07:00 0HLHN4UE4OPQT:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:21.4017019+07:00 0HLHN4UE4OPQT:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], [dtoFunction].[SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-10-21T14:39:21.5950765+07:00 0HLHN4UE4OPQT:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.Index (LBCoreApp)" in 1369.9699ms (afa2e885)
+2018-10-21T14:39:21.6359374+07:00 0HLHN4UE4OPQR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-10-21T14:39:21.7307016+07:00 0HLHN4UE4OPQU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/app/Controllers/Product-Category/Index.js?v=2Tqr88NdFOp6tdQnwVS0gkJv0232dNhN8lv-rGIlNyQ   (ca22a1cb)
+2018-10-21T14:39:21.7368191+07:00 0HLHN4UE4OPQQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-10-21T14:39:21.7552864+07:00 0HLHN4UE4OPQT:00000002 [INF] Request finished in 1515.3577ms 200 text/html; charset=utf-8 (791a596a)
+2018-10-21T14:39:21.7722401+07:00 0HLHN4UE4OPQR:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/icon.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-10-21T14:39:21.7752692+07:00 0HLHN4UE4OPQM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-10-21T14:39:21.8512734+07:00 0HLHN4UE4OPQU:00000002 [INF] Sending file. Request path: '"/app/Controllers/Product-Category/Index.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\app\Controllers\Product-Category\Index.js"' (27b0a520)
+2018-10-21T14:39:21.8669373+07:00 0HLHN4UE4OPQQ:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-10-21T14:39:21.9202293+07:00 0HLHN4UE4OPQM:00000004 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-10-21T14:39:22.0083930+07:00 0HLHN4UE4OPQU:00000002 [INF] Request finished in 272.5507ms 200 application/javascript (791a596a)
+2018-10-21T14:39:22.0361462+07:00 0HLHN4UE4OPQR:00000002 [INF] Request finished in 200.1369ms 200 text/css (791a596a)
+2018-10-21T14:39:22.2056837+07:00 0HLHN4UE4OPQQ:00000002 [INF] Request finished in 352.4107ms 200 text/css (791a596a)
+2018-10-21T14:39:22.3168937+07:00 0HLHN4UE4OPQM:00000004 [INF] Request finished in 648.0907ms 200 application/javascript (791a596a)
+2018-10-21T14:39:22.3964609+07:00 0HLHN4UE4OPR3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-21T14:39:22.4300397+07:00 0HLHN4UE4OPR3:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:39:22.5215411+07:00 0HLHN4UE4OPR3:00000002 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:39:22.5593244+07:00 0HLHN4UE4OPR3:00000002 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:39:22.5988472+07:00 0HLHN4UE4OPQV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/icons/edit_remove.png   (ca22a1cb)
+2018-10-21T14:39:22.6271695+07:00 0HLHN4UE4OPQO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/icons/pencil.png   (ca22a1cb)
+2018-10-21T14:39:22.9651027+07:00 0HLHN4UE4OPQO:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/icons/pencil.png"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\icons\pencil.png"' (27b0a520)
+2018-10-21T14:39:23.1512809+07:00 0HLHN4UE4OPQV:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/icons/edit_remove.png"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\icons\edit_remove.png"' (27b0a520)
+2018-10-21T14:39:23.1844677+07:00 0HLHN4UE4OPQO:00000002 [INF] Request finished in 557.9024ms 200 image/png (791a596a)
+2018-10-21T14:39:23.2897226+07:00 0HLHN4UE4OPQV:00000002 [INF] Request finished in 691.0763ms 200 image/png (791a596a)
+2018-10-21T14:39:23.7882509+07:00 0HLHN4UE4OPR3:00000002 [INF] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Id], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-10-21T14:39:24.0458089+07:00 0HLHN4UE4OPR3:00000002 [INF] Executed DbCommand ("193"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[CategoryId], [x.Products].[Content], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Description], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[Id] AS [Id0], [x.Products].[Image], [x.Products].[Name], [x.Products].[OriginalPrice], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[SeoAlias], [x.Products].[SeoDescription], [x.Products].[SeoKeywords], [x.Products].[SeoPageTitle], [x.Products].[Status], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[ViewCount]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-10-21T14:39:24.1101061+07:00 0HLHN4UE4OPR3:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:39:24.2720677+07:00 0HLHN4UE4OPR3:00000002 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" in 1854.0829ms (afa2e885)
+2018-10-21T14:39:24.3175382+07:00 0HLHN4UE4OPR3:00000002 [INF] Request finished in 1892.054ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:39:24.3474480+07:00 0HLHN4UE4OPR2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-10-21T14:39:24.3954989+07:00 0HLHN4UE4OPR2:00000002 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
+2018-10-21T14:39:24.4721059+07:00 0HLHN4UE4OPR2:00000002 [INF] Request finished in 92.8175ms 200 image/png (791a596a)
+2018-10-21T14:40:01.1845416+07:00 0HLHN4UE4OPR4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-10-21T14:40:01.2059970+07:00 0HLHN4UE4OPR4:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2018-10-21T14:40:01.4158422+07:00 0HLHN4UE4OPR4:00000002 [INF] Request finished in 213.0318ms 200 text/plain (791a596a)
+2018-10-21T14:40:32.8255621+07:00 0HLHN4UE4OPR4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/ProductCategory/GetById?id=1   (ca22a1cb)
+2018-10-21T14:40:32.8546417+07:00 0HLHN4UE4OPR4:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:40:32.8633209+07:00 0HLHN4UE4OPR4:00000003 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (LBCoreApp)" with arguments (["1"]) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:40:32.8796454+07:00 0HLHN4UE4OPR4:00000003 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:40:32.9729768+07:00 0HLHN4UE4OPR4:00000003 [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-10-21T14:40:33.2065102+07:00 0HLHN4UE4OPR4:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:40:33.2183101+07:00 0HLHN4UE4OPR4:00000003 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetById (LBCoreApp)" in 360.8073ms (afa2e885)
+2018-10-21T14:40:33.2379033+07:00 0HLHN4UE4OPR4:00000003 [INF] Request finished in 409.6131ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:40:33.2506290+07:00 0HLHN4UE4OPR4:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-21T14:40:33.2596084+07:00 0HLHN4UE4OPR4:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:40:33.2679157+07:00 0HLHN4UE4OPR4:00000004 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:40:33.2773473+07:00 0HLHN4UE4OPR4:00000004 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:40:33.2905239+07:00 0HLHN4UE4OPR4:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Id], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-10-21T14:40:33.3470408+07:00 0HLHN4UE4OPR4:00000004 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[CategoryId], [x.Products].[Content], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Description], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[Id] AS [Id0], [x.Products].[Image], [x.Products].[Name], [x.Products].[OriginalPrice], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[SeoAlias], [x.Products].[SeoDescription], [x.Products].[SeoKeywords], [x.Products].[SeoPageTitle], [x.Products].[Status], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[ViewCount]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-10-21T14:40:33.3605919+07:00 0HLHN4UE4OPR4:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:40:33.3756282+07:00 0HLHN4UE4OPR4:00000004 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" in 110.0762ms (afa2e885)
+2018-10-21T14:40:33.3873332+07:00 0HLHN4UE4OPR4:00000004 [INF] Request finished in 133.8025ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:40:33.4307376+07:00 0HLHN4UE4OPR4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44374/lib/bower_components/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png   (ca22a1cb)
+2018-10-21T14:40:33.4883816+07:00 0HLHN4UE4OPR4:00000005 [INF] Sending file. Request path: '"/lib/bower_components/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png"'. Physical path: '"D:\THIENPHU_ID\hoctap\Online\NET_CORE2\LBCoreApp\LBCoreApp\wwwroot\lib\bower_components\jQuery-EasyUI\themes\bootstrap\images\combo_arrow.png"' (27b0a520)
+2018-10-21T14:40:33.5129214+07:00 0HLHN4UE4OPR4:00000005 [INF] Request finished in 79.658ms 200 image/png (791a596a)
+2018-10-21T14:40:48.4381779+07:00 0HLHN4UE4OPR4:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44374/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 157 (ca22a1cb)
+2018-10-21T14:40:48.5320871+07:00 0HLHN4UE4OPR4:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:40:48.5903745+07:00 0HLHN4UE4OPR4:00000006 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (LBCoreApp)" with arguments (["LBCoreApp.Application.ViewModels.Product.ProductCategoryViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:40:48.7495229+07:00 0HLHN4UE4OPR4:00000006 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:40:49.7807418+07:00 0HLHN4UE4OPR4:00000006 [INF] Executed DbCommand ("398"ms) [Parameters=["@p14='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-10-21T14:40:49.9068727+07:00 0HLHN4UE4OPR4:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:40:49.9202448+07:00 0HLHN4UE4OPR4:00000006 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (LBCoreApp)" in 1385.784ms (afa2e885)
+2018-10-21T14:40:49.9316437+07:00 0HLHN4UE4OPR4:00000006 [INF] Request finished in 1490.9416ms 200 application/json; charset=utf-8 (791a596a)
+2018-10-21T14:40:49.9551397+07:00 0HLHN4UE4OPR4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44374/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-10-21T14:40:49.9640683+07:00 0HLHN4UE4OPR4:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-10-21T14:40:49.9719888+07:00 0HLHN4UE4OPR4:00000007 [INF] Executing action method "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-10-21T14:40:49.9803713+07:00 0HLHN4UE4OPR4:00000007 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=LBCoreApp.Data.EF " (9958f5bb)
+2018-10-21T14:40:50.0159971+07:00 0HLHN4UE4OPR4:00000007 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Id], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-10-21T14:40:50.0306242+07:00 0HLHN4UE4OPR4:00000007 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[CategoryId], [x.Products].[Content], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Description], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[Id] AS [Id0], [x.Products].[Image], [x.Products].[Name], [x.Products].[OriginalPrice], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[SeoAlias], [x.Products].[SeoDescription], [x.Products].[SeoKeywords], [x.Products].[SeoPageTitle], [x.Products].[Status], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[ViewCount]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-10-21T14:40:50.0388991+07:00 0HLHN4UE4OPR4:00000007 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-10-21T14:40:50.0496239+07:00 0HLHN4UE4OPR4:00000007 [INF] Executed action "LBCoreApp.Areas.Admin.Controllers.ProductCategoryController.GetAll (LBCoreApp)" in 82.8588ms (afa2e885)
+2018-10-21T14:40:50.0619454+07:00 0HLHN4UE4OPR4:00000007 [INF] Request finished in 102.0692ms 200 application/json; charset=utf-8 (791a596a)
