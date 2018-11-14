@@ -84,11 +84,15 @@ namespace LBCoreApp
             services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository,FunctionRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductTagRepository, ProductTagRepository>();
+            services.AddTransient<ITagRepository, TagRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService,ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
             services.AddTransient<IProductService, ProductService>();
+            //services.AddTransient<IProductTagService, ProductTagService>();
+            //services.AddTransient<ITagService, TagService>();
 
         }
 
